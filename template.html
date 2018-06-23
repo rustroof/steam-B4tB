@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <style>
+    .data td {
+      text-align: right;
+    }
+
+    .data td:nth-child(2) {
+      text-align: left;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container mt-4">
+    <h1>Steam: Bang for the buck</h1>
+    <p>This list is an attempt to quantify how much "Bang for a buck" a game is. The score is calculated by a somewhat arbitrary formula:
+    <pre>
+      score = sqrt(median_playtime * mean_playtime) / price * rating
+    </pre>
+    The resulting unit is <code>hour/$</code> ,which can be interpreted as how many hours of gameplay one get for each dollar spent.
+    </p>
+    <p>
+      To ensure the credibility of the user rating score, only games with at least 500 reviews are listed. 
+    </p>
+    <p>
+    All data are taken from the <a href="https://steamspy.com/">steamspy</a> API, last updated on 2018-06-23.
+    </p>
+    <table class="data table">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Mean Playtime</th>
+          <th>Median Playtime</th>
+          <th>Current Price (USD)</th>
+          <th>Rating</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for index, row in df.head(500).iterrows() %}
+        <tr>
+          <td>{{loop.index0 + 1}}</td>
+          <td><a href="{{'https://store.steampowered.com/app/{}'.format(row['appid'])}}">{{row['name']}}</a></td>
+          <td>{{'{}h {:02d}m'.format(row['average_forever'] // 60, row['average_forever'] % 60)}}</td>
+          <td>{{'{}h {:02d}m'.format(row['median_forever'] // 60, row['median_forever'] % 60)}}</td>
+          <td>{{'${}.{}'.format(row['price'] // 100, row['price'] % 100)}}</td>
+          <td>{{ '{:.1f}%'.format(row.rating * 100) }}</td>
+          <td>{{ '{:.3f}'.format(row.score) }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
