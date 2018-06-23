@@ -1,0 +1,5059 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Steam: Bang for the buck</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <style>
+    .data td {
+      text-align: right;
+    }
+
+    .data td:nth-child(2) {
+      text-align: left;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container mt-4">
+    <h1>Steam: Bang for the buck</h1>
+    <p>This list is an attempt to quantify how much "Bang for a buck" a game is. The score is calculated by a somewhat arbitrary formula:
+    <pre>
+      score = sqrt(median_playtime * mean_playtime) / price * rating
+    </pre>
+    The resulting unit is <code>hour/$</code> ,which can be interpreted as how many hours of gameplay one get for each dollar spent.
+    </p>
+    <p>
+      To ensure the credibility of the user rating score, only games with at least 500 reviews are listed. 
+    </p>
+    <p>
+    All data are taken from the <a href="https://steamspy.com/">steamspy</a> API, last updated on 2018-06-23. 
+    The code can be found on <a href="https://github.com/rustroof/steam-b4tb">GitHub</a>
+    </p>
+    <table class="data table">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Mean Playtime</th>
+          <th>Median Playtime</th>
+          <th>Current Price (USD)</th>
+          <th>Rating</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>1</td>
+          <td><a href="https://store.steampowered.com/app/399120">Prospekt</a></td>
+          <td>190h 14m</td>
+          <td>283h 59m</td>
+          <td>$2.49</td>
+          <td>59.6%</td>
+          <td>55.671</td>
+        </tr>
+        
+        <tr>
+          <td>2</td>
+          <td><a href="https://store.steampowered.com/app/730">Counter-Strike: Global Offensive</a></td>
+          <td>624h 04m</td>
+          <td>307h 03m</td>
+          <td>$7.49</td>
+          <td>88.9%</td>
+          <td>51.965</td>
+        </tr>
+        
+        <tr>
+          <td>3</td>
+          <td><a href="https://store.steampowered.com/app/4000">Garry's Mod</a></td>
+          <td>185h 29m</td>
+          <td>28h 18m</td>
+          <td>$2.49</td>
+          <td>95.7%</td>
+          <td>27.849</td>
+        </tr>
+        
+        <tr>
+          <td>4</td>
+          <td><a href="https://store.steampowered.com/app/1630">Disciples II: Rise of the Elves </a></td>
+          <td>157h 57m</td>
+          <td>4h 20m</td>
+          <td>$1.4</td>
+          <td>80.9%</td>
+          <td>20.345</td>
+        </tr>
+        
+        <tr>
+          <td>5</td>
+          <td><a href="https://store.steampowered.com/app/10270">Disciples III: Reincarnation</a></td>
+          <td>45h 54m</td>
+          <td>57h 10m</td>
+          <td>$2.99</td>
+          <td>71.6%</td>
+          <td>12.260</td>
+        </tr>
+        
+        <tr>
+          <td>6</td>
+          <td><a href="https://store.steampowered.com/app/550">Left 4 Dead 2</a></td>
+          <td>53h 24m</td>
+          <td>10h 18m</td>
+          <td>$1.99</td>
+          <td>96.9%</td>
+          <td>11.417</td>
+        </tr>
+        
+        <tr>
+          <td>7</td>
+          <td><a href="https://store.steampowered.com/app/384300">CPUCores :: Maximize Your FPS</a></td>
+          <td>180h 34m</td>
+          <td>68h 18m</td>
+          <td>$7.34</td>
+          <td>74.1%</td>
+          <td>11.210</td>
+        </tr>
+        
+        <tr>
+          <td>8</td>
+          <td><a href="https://store.steampowered.com/app/105600">Terraria</a></td>
+          <td>101h 25m</td>
+          <td>32h 02m</td>
+          <td>$4.99</td>
+          <td>97.1%</td>
+          <td>11.088</td>
+        </tr>
+        
+        <tr>
+          <td>9</td>
+          <td><a href="https://store.steampowered.com/app/48700">Mount & Blade: Warband</a></td>
+          <td>99h 14m</td>
+          <td>28h 39m</td>
+          <td>$4.99</td>
+          <td>97.2%</td>
+          <td>10.391</td>
+        </tr>
+        
+        <tr>
+          <td>10</td>
+          <td><a href="https://store.steampowered.com/app/22380">Fallout: New Vegas</a></td>
+          <td>57h 40m</td>
+          <td>21h 03m</td>
+          <td>$3.29</td>
+          <td>95.5%</td>
+          <td>10.114</td>
+        </tr>
+        
+        <tr>
+          <td>11</td>
+          <td><a href="https://store.steampowered.com/app/786520">SAO Utils: Beta</a></td>
+          <td>92h 39m</td>
+          <td>31h 10m</td>
+          <td>$3.99</td>
+          <td>75.0%</td>
+          <td>10.096</td>
+        </tr>
+        
+        <tr>
+          <td>12</td>
+          <td><a href="https://store.steampowered.com/app/315660">Trainz: A New Era</a></td>
+          <td>100h 13m</td>
+          <td>194h 25m</td>
+          <td>$9.99</td>
+          <td>68.5%</td>
+          <td>9.571</td>
+        </tr>
+        
+        <tr>
+          <td>13</td>
+          <td><a href="https://store.steampowered.com/app/223330">Sea Dogs: To Each His Own - Pirate Open World RPG</a></td>
+          <td>47h 31m</td>
+          <td>43h 28m</td>
+          <td>$3.74</td>
+          <td>78.3%</td>
+          <td>9.517</td>
+        </tr>
+        
+        <tr>
+          <td>14</td>
+          <td><a href="https://store.steampowered.com/app/3590">Plants vs. Zombies GOTY Edition</a></td>
+          <td>21h 43m</td>
+          <td>5h 15m</td>
+          <td>$1.24</td>
+          <td>97.2%</td>
+          <td>8.367</td>
+        </tr>
+        
+        <tr>
+          <td>15</td>
+          <td><a href="https://store.steampowered.com/app/385800">NEKOPARA Vol. 0</a></td>
+          <td>39h 52m</td>
+          <td>2h 34m</td>
+          <td>$1.19</td>
+          <td>93.8%</td>
+          <td>7.972</td>
+        </tr>
+        
+        <tr>
+          <td>16</td>
+          <td><a href="https://store.steampowered.com/app/8930">Sid Meier's Civilization V</a></td>
+          <td>96h 43m</td>
+          <td>35h 45m</td>
+          <td>$7.49</td>
+          <td>96.3%</td>
+          <td>7.561</td>
+        </tr>
+        
+        <tr>
+          <td>17</td>
+          <td><a href="https://store.steampowered.com/app/252490">Rust</a></td>
+          <td>191h 39m</td>
+          <td>35h 01m</td>
+          <td>$8.74</td>
+          <td>80.5%</td>
+          <td>7.545</td>
+        </tr>
+        
+        <tr>
+          <td>18</td>
+          <td><a href="https://store.steampowered.com/app/250900">The Binding of Isaac: Rebirth</a></td>
+          <td>115h 45m</td>
+          <td>39h 48m</td>
+          <td>$8.99</td>
+          <td>97.6%</td>
+          <td>7.369</td>
+        </tr>
+        
+        <tr>
+          <td>19</td>
+          <td><a href="https://store.steampowered.com/app/223410">Perpetuum</a></td>
+          <td>21h 04m</td>
+          <td>7h 40m</td>
+          <td>$1.24</td>
+          <td>70.5%</td>
+          <td>7.226</td>
+        </tr>
+        
+        <tr>
+          <td>20</td>
+          <td><a href="https://store.steampowered.com/app/334230">Town of Salem</a></td>
+          <td>34h 29m</td>
+          <td>12h 01m</td>
+          <td>$2.49</td>
+          <td>88.3%</td>
+          <td>7.219</td>
+        </tr>
+        
+        <tr>
+          <td>21</td>
+          <td><a href="https://store.steampowered.com/app/616110">SPACEPLAN</a></td>
+          <td>12h 45m</td>
+          <td>10h 47m</td>
+          <td>$1.49</td>
+          <td>91.1%</td>
+          <td>7.169</td>
+        </tr>
+        
+        <tr>
+          <td>22</td>
+          <td><a href="https://store.steampowered.com/app/386480">Blood Code</a></td>
+          <td>91h 37m</td>
+          <td>4h 22m</td>
+          <td>$2.9</td>
+          <td>73.0%</td>
+          <td>6.991</td>
+        </tr>
+        
+        <tr>
+          <td>23</td>
+          <td><a href="https://store.steampowered.com/app/304410">Hexcells Infinite</a></td>
+          <td>16h 40m</td>
+          <td>6h 37m</td>
+          <td>$1.49</td>
+          <td>96.9%</td>
+          <td>6.827</td>
+        </tr>
+        
+        <tr>
+          <td>24</td>
+          <td><a href="https://store.steampowered.com/app/388080">Borderless Gaming</a></td>
+          <td>43h 49m</td>
+          <td>5h 51m</td>
+          <td>$1.99</td>
+          <td>81.7%</td>
+          <td>6.574</td>
+        </tr>
+        
+        <tr>
+          <td>25</td>
+          <td><a href="https://store.steampowered.com/app/227300">Euro Truck Simulator 2</a></td>
+          <td>62h 41m</td>
+          <td>18h 11m</td>
+          <td>$4.99</td>
+          <td>97.0%</td>
+          <td>6.564</td>
+        </tr>
+        
+        <tr>
+          <td>26</td>
+          <td><a href="https://store.steampowered.com/app/236850">Europa Universalis IV</a></td>
+          <td>191h 13m</td>
+          <td>32h 23m</td>
+          <td>$9.99</td>
+          <td>82.3%</td>
+          <td>6.480</td>
+        </tr>
+        
+        <tr>
+          <td>27</td>
+          <td><a href="https://store.steampowered.com/app/49520">Borderlands 2</a></td>
+          <td>53h 14m</td>
+          <td>19h 29m</td>
+          <td>$4.99</td>
+          <td>96.6%</td>
+          <td>6.234</td>
+        </tr>
+        
+        <tr>
+          <td>28</td>
+          <td><a href="https://store.steampowered.com/app/55230">Saints Row: The Third</a></td>
+          <td>27h 59m</td>
+          <td>16h 56m</td>
+          <td>$3.39</td>
+          <td>96.2%</td>
+          <td>6.180</td>
+        </tr>
+        
+        <tr>
+          <td>29</td>
+          <td><a href="https://store.steampowered.com/app/107410">Arma 3</a></td>
+          <td>231h 07m</td>
+          <td>36h 48m</td>
+          <td>$13.59</td>
+          <td>89.7%</td>
+          <td>6.084</td>
+        </tr>
+        
+        <tr>
+          <td>30</td>
+          <td><a href="https://store.steampowered.com/app/620">Portal 2</a></td>
+          <td>15h 56m</td>
+          <td>9h 16m</td>
+          <td>$1.99</td>
+          <td>98.7%</td>
+          <td>6.027</td>
+        </tr>
+        
+        <tr>
+          <td>31</td>
+          <td><a href="https://store.steampowered.com/app/500">Left 4 Dead</a></td>
+          <td>34h 09m</td>
+          <td>4h 33m</td>
+          <td>$1.99</td>
+          <td>95.0%</td>
+          <td>5.953</td>
+        </tr>
+        
+        <tr>
+          <td>32</td>
+          <td><a href="https://store.steampowered.com/app/39210">FINAL FANTASY XIV Online</a></td>
+          <td>362h 20m</td>
+          <td>57h 10m</td>
+          <td>$19.99</td>
+          <td>82.4%</td>
+          <td>5.931</td>
+        </tr>
+        
+        <tr>
+          <td>33</td>
+          <td><a href="https://store.steampowered.com/app/578080">PLAYERUNKNOWN'S BATTLEGROUNDS</a></td>
+          <td>292h 52m</td>
+          <td>174h 23m</td>
+          <td>$19.99</td>
+          <td>52.3%</td>
+          <td>5.913</td>
+        </tr>
+        
+        <tr>
+          <td>34</td>
+          <td><a href="https://store.steampowered.com/app/236430">DARK SOULS II</a></td>
+          <td>85h 28m</td>
+          <td>49h 47m</td>
+          <td>$9.99</td>
+          <td>88.8%</td>
+          <td>5.795</td>
+        </tr>
+        
+        <tr>
+          <td>35</td>
+          <td><a href="https://store.steampowered.com/app/595280">Throne of Lies The Online Game of Deceit</a></td>
+          <td>43h 34m</td>
+          <td>22h 08m</td>
+          <td>$4.99</td>
+          <td>89.5%</td>
+          <td>5.569</td>
+        </tr>
+        
+        <tr>
+          <td>36</td>
+          <td><a href="https://store.steampowered.com/app/218620">PAYDAY 2</a></td>
+          <td>79h 18m</td>
+          <td>13h 36m</td>
+          <td>$4.99</td>
+          <td>83.6%</td>
+          <td>5.502</td>
+        </tr>
+        
+        <tr>
+          <td>37</td>
+          <td><a href="https://store.steampowered.com/app/582660">Black Desert Online</a></td>
+          <td>140h 40m</td>
+          <td>11h 21m</td>
+          <td>$4.99</td>
+          <td>67.8%</td>
+          <td>5.429</td>
+        </tr>
+        
+        <tr>
+          <td>38</td>
+          <td><a href="https://store.steampowered.com/app/15370">Heroes of Might & Magic V: Tribes of the East</a></td>
+          <td>29h 10m</td>
+          <td>7h 15m</td>
+          <td>$2.49</td>
+          <td>92.6%</td>
+          <td>5.410</td>
+        </tr>
+        
+        <tr>
+          <td>39</td>
+          <td><a href="https://store.steampowered.com/app/24980">Mass Effect 2</a></td>
+          <td>36h 10m</td>
+          <td>21h 46m</td>
+          <td>$4.99</td>
+          <td>95.6%</td>
+          <td>5.374</td>
+        </tr>
+        
+        <tr>
+          <td>40</td>
+          <td><a href="https://store.steampowered.com/app/212680">FTL: Faster Than Light</a></td>
+          <td>21h 29m</td>
+          <td>8h 25m</td>
+          <td>$2.49</td>
+          <td>96.7%</td>
+          <td>5.221</td>
+        </tr>
+        
+        <tr>
+          <td>41</td>
+          <td><a href="https://store.steampowered.com/app/447020">Farming Simulator 17</a></td>
+          <td>93h 58m</td>
+          <td>33h 50m</td>
+          <td>$9.99</td>
+          <td>92.3%</td>
+          <td>5.212</td>
+        </tr>
+        
+        <tr>
+          <td>42</td>
+          <td><a href="https://store.steampowered.com/app/78000">Bejeweled 3</a></td>
+          <td>15h 34m</td>
+          <td>2h 44m</td>
+          <td>$1.24</td>
+          <td>95.8%</td>
+          <td>5.039</td>
+        </tr>
+        
+        <tr>
+          <td>43</td>
+          <td><a href="https://store.steampowered.com/app/240">Counter-Strike: Source</a></td>
+          <td>135h 48m</td>
+          <td>9h 10m</td>
+          <td>$6.79</td>
+          <td>95.6%</td>
+          <td>4.969</td>
+        </tr>
+        
+        <tr>
+          <td>44</td>
+          <td><a href="https://store.steampowered.com/app/65800">Dungeon Defenders</a></td>
+          <td>36h 48m</td>
+          <td>10h 47m</td>
+          <td>$3.74</td>
+          <td>92.1%</td>
+          <td>4.905</td>
+        </tr>
+        
+        <tr>
+          <td>45</td>
+          <td><a href="https://store.steampowered.com/app/344760">Reign Of Kings</a></td>
+          <td>28h 41m</td>
+          <td>9h 33m</td>
+          <td>$1.99</td>
+          <td>58.3%</td>
+          <td>4.848</td>
+        </tr>
+        
+        <tr>
+          <td>46</td>
+          <td><a href="https://store.steampowered.com/app/205100">Dishonored</a></td>
+          <td>16h 01m</td>
+          <td>9h 24m</td>
+          <td>$2.49</td>
+          <td>97.1%</td>
+          <td>4.787</td>
+        </tr>
+        
+        <tr>
+          <td>47</td>
+          <td><a href="https://store.steampowered.com/app/40100">Supreme Commander 2</a></td>
+          <td>37h 21m</td>
+          <td>8h 32m</td>
+          <td>$3.24</td>
+          <td>85.7%</td>
+          <td>4.720</td>
+        </tr>
+        
+        <tr>
+          <td>48</td>
+          <td><a href="https://store.steampowered.com/app/268650">From the Depths</a></td>
+          <td>62h 01m</td>
+          <td>7h 18m</td>
+          <td>$3.99</td>
+          <td>88.4%</td>
+          <td>4.714</td>
+        </tr>
+        
+        <tr>
+          <td>49</td>
+          <td><a href="https://store.steampowered.com/app/73170">Darkest Hour: A Hearts of Iron Game</a></td>
+          <td>25h 12m</td>
+          <td>4h 09m</td>
+          <td>$1.99</td>
+          <td>90.0%</td>
+          <td>4.626</td>
+        </tr>
+        
+        <tr>
+          <td>50</td>
+          <td><a href="https://store.steampowered.com/app/252950">Rocket League</a></td>
+          <td>110h 27m</td>
+          <td>22h 39m</td>
+          <td>$9.99</td>
+          <td>92.2%</td>
+          <td>4.618</td>
+        </tr>
+        
+        <tr>
+          <td>51</td>
+          <td><a href="https://store.steampowered.com/app/347830">Fairy Fencer F</a></td>
+          <td>75h 54m</td>
+          <td>6h 49m</td>
+          <td>$4.49</td>
+          <td>91.0%</td>
+          <td>4.611</td>
+        </tr>
+        
+        <tr>
+          <td>52</td>
+          <td><a href="https://store.steampowered.com/app/4850">Cossacks: Back to War</a></td>
+          <td>9h 51m</td>
+          <td>4h 10m</td>
+          <td>$1.24</td>
+          <td>88.6%</td>
+          <td>4.576</td>
+        </tr>
+        
+        <tr>
+          <td>53</td>
+          <td><a href="https://store.steampowered.com/app/364930">Koi-Koi Japan [Hanafuda playing cards]</a></td>
+          <td>20h 35m</td>
+          <td>4h 34m</td>
+          <td>$1.99</td>
+          <td>93.4%</td>
+          <td>4.551</td>
+        </tr>
+        
+        <tr>
+          <td>54</td>
+          <td><a href="https://store.steampowered.com/app/1640">Disciples II: Gallean's Return</a></td>
+          <td>24h 35m</td>
+          <td>1h 35m</td>
+          <td>$1.4</td>
+          <td>75.7%</td>
+          <td>4.543</td>
+        </tr>
+        
+        <tr>
+          <td>55</td>
+          <td><a href="https://store.steampowered.com/app/17450">Dragon Age: Origins</a></td>
+          <td>39h 54m</td>
+          <td>14h 42m</td>
+          <td>$4.99</td>
+          <td>93.3%</td>
+          <td>4.530</td>
+        </tr>
+        
+        <tr>
+          <td>56</td>
+          <td><a href="https://store.steampowered.com/app/350810">Pixel Puzzles 2: Anime</a></td>
+          <td>19h 20m</td>
+          <td>3h 52m</td>
+          <td>$1.49</td>
+          <td>76.4%</td>
+          <td>4.436</td>
+        </tr>
+        
+        <tr>
+          <td>57</td>
+          <td><a href="https://store.steampowered.com/app/414290">Princess.Loot.Pixel.Again</a></td>
+          <td>6h 17m</td>
+          <td>6h 34m</td>
+          <td>$1.24</td>
+          <td>85.4%</td>
+          <td>4.426</td>
+        </tr>
+        
+        <tr>
+          <td>58</td>
+          <td><a href="https://store.steampowered.com/app/287700">METAL GEAR SOLID V: THE PHANTOM PAIN</a></td>
+          <td>63h 43m</td>
+          <td>38h 55m</td>
+          <td>$9.99</td>
+          <td>88.7%</td>
+          <td>4.420</td>
+        </tr>
+        
+        <tr>
+          <td>59</td>
+          <td><a href="https://store.steampowered.com/app/268400">Panzer Corps</a></td>
+          <td>34h 31m</td>
+          <td>2h 32m</td>
+          <td>$1.99</td>
+          <td>92.6%</td>
+          <td>4.349</td>
+        </tr>
+        
+        <tr>
+          <td>60</td>
+          <td><a href="https://store.steampowered.com/app/421700">Sakura Santa</a></td>
+          <td>47h 01m</td>
+          <td>3h 21m</td>
+          <td>$2.49</td>
+          <td>86.1%</td>
+          <td>4.341</td>
+        </tr>
+        
+        <tr>
+          <td>61</td>
+          <td><a href="https://store.steampowered.com/app/407330">Sakura Dungeon</a></td>
+          <td>169h 03m</td>
+          <td>8h 07m</td>
+          <td>$7.99</td>
+          <td>92.5%</td>
+          <td>4.289</td>
+        </tr>
+        
+        <tr>
+          <td>62</td>
+          <td><a href="https://store.steampowered.com/app/284950">Pixel Puzzles: Japan</a></td>
+          <td>5h 36m</td>
+          <td>5h 12m</td>
+          <td>$1.4</td>
+          <td>82.0%</td>
+          <td>4.256</td>
+        </tr>
+        
+        <tr>
+          <td>63</td>
+          <td><a href="https://store.steampowered.com/app/285010">Pixel Puzzles: UndeadZ</a></td>
+          <td>6h 47m</td>
+          <td>5h 01m</td>
+          <td>$1.4</td>
+          <td>75.6%</td>
+          <td>4.239</td>
+        </tr>
+        
+        <tr>
+          <td>64</td>
+          <td><a href="https://store.steampowered.com/app/271590">Grand Theft Auto V</a></td>
+          <td>167h 04m</td>
+          <td>91h 11m</td>
+          <td>$19.79</td>
+          <td>67.9%</td>
+          <td>4.234</td>
+        </tr>
+        
+        <tr>
+          <td>65</td>
+          <td><a href="https://store.steampowered.com/app/33930">Arma 2: Operation Arrowhead</a></td>
+          <td>61h 46m</td>
+          <td>5h 20m</td>
+          <td>$3.99</td>
+          <td>92.1%</td>
+          <td>4.189</td>
+        </tr>
+        
+        <tr>
+          <td>66</td>
+          <td><a href="https://store.steampowered.com/app/15210">Silent Hunter III</a></td>
+          <td>16h 15m</td>
+          <td>16h 23m</td>
+          <td>$3.39</td>
+          <td>86.5%</td>
+          <td>4.164</td>
+        </tr>
+        
+        <tr>
+          <td>67</td>
+          <td><a href="https://store.steampowered.com/app/282800">100% Orange Juice</a></td>
+          <td>15h 10m</td>
+          <td>3h 57m</td>
+          <td>$1.74</td>
+          <td>93.3%</td>
+          <td>4.150</td>
+        </tr>
+        
+        <tr>
+          <td>68</td>
+          <td><a href="https://store.steampowered.com/app/311310">Naval Action</a></td>
+          <td>111h 23m</td>
+          <td>91h 02m</td>
+          <td>$15.99</td>
+          <td>65.0%</td>
+          <td>4.093</td>
+        </tr>
+        
+        <tr>
+          <td>69</td>
+          <td><a href="https://store.steampowered.com/app/275470">Chip</a></td>
+          <td>26h 44m</td>
+          <td>3h 45m</td>
+          <td>$2.9</td>
+          <td>85.2%</td>
+          <td>4.082</td>
+        </tr>
+        
+        <tr>
+          <td>70</td>
+          <td><a href="https://store.steampowered.com/app/39540">SpellForce - Platinum Edition</a></td>
+          <td>29h 19m</td>
+          <td>4h 50m</td>
+          <td>$2.49</td>
+          <td>85.0%</td>
+          <td>4.064</td>
+        </tr>
+        
+        <tr>
+          <td>71</td>
+          <td><a href="https://store.steampowered.com/app/25900">King's Bounty: The Legend</a></td>
+          <td>17h 36m</td>
+          <td>3h 27m</td>
+          <td>$1.74</td>
+          <td>90.3%</td>
+          <td>4.046</td>
+        </tr>
+        
+        <tr>
+          <td>72</td>
+          <td><a href="https://store.steampowered.com/app/206420">Saints Row IV</a></td>
+          <td>20h 05m</td>
+          <td>13h 15m</td>
+          <td>$3.74</td>
+          <td>92.1%</td>
+          <td>4.017</td>
+        </tr>
+        
+        <tr>
+          <td>73</td>
+          <td><a href="https://store.steampowered.com/app/359550">Tom Clancy's Rainbow Six Siege</a></td>
+          <td>133h 45m</td>
+          <td>41h 02m</td>
+          <td>$14.99</td>
+          <td>80.6%</td>
+          <td>3.983</td>
+        </tr>
+        
+        <tr>
+          <td>74</td>
+          <td><a href="https://store.steampowered.com/app/15170">Heroes of Might & Magic V</a></td>
+          <td>25h 39m</td>
+          <td>4h 57m</td>
+          <td>$2.49</td>
+          <td>87.9%</td>
+          <td>3.976</td>
+        </tr>
+        
+        <tr>
+          <td>75</td>
+          <td><a href="https://store.steampowered.com/app/420440">Atlantic Fleet</a></td>
+          <td>24h 06m</td>
+          <td>44h 42m</td>
+          <td>$6.99</td>
+          <td>84.7%</td>
+          <td>3.976</td>
+        </tr>
+        
+        <tr>
+          <td>76</td>
+          <td><a href="https://store.steampowered.com/app/624090">Football Manager 2018</a></td>
+          <td>136h 40m</td>
+          <td>89h 14m</td>
+          <td>$17.0</td>
+          <td>61.0%</td>
+          <td>3.963</td>
+        </tr>
+        
+        <tr>
+          <td>77</td>
+          <td><a href="https://store.steampowered.com/app/494230">Heart's Medicine - Time to Heal</a></td>
+          <td>13h 09m</td>
+          <td>14h 38m</td>
+          <td>$3.24</td>
+          <td>92.5%</td>
+          <td>3.960</td>
+        </tr>
+        
+        <tr>
+          <td>78</td>
+          <td><a href="https://store.steampowered.com/app/394360">Hearts of Iron IV</a></td>
+          <td>125h 29m</td>
+          <td>45h 39m</td>
+          <td>$15.99</td>
+          <td>83.6%</td>
+          <td>3.956</td>
+        </tr>
+        
+        <tr>
+          <td>79</td>
+          <td><a href="https://store.steampowered.com/app/64000">Men of War: Assault Squad</a></td>
+          <td>27h 26m</td>
+          <td>4h 32m</td>
+          <td>$2.49</td>
+          <td>88.3%</td>
+          <td>3.954</td>
+        </tr>
+        
+        <tr>
+          <td>80</td>
+          <td><a href="https://store.steampowered.com/app/326480">If My Heart Had Wings</a></td>
+          <td>65h 32m</td>
+          <td>3h 52m</td>
+          <td>$3.74</td>
+          <td>92.4%</td>
+          <td>3.932</td>
+        </tr>
+        
+        <tr>
+          <td>81</td>
+          <td><a href="https://store.steampowered.com/app/270880">American Truck Simulator</a></td>
+          <td>32h 38m</td>
+          <td>13h 47m</td>
+          <td>$4.99</td>
+          <td>91.9%</td>
+          <td>3.906</td>
+        </tr>
+        
+        <tr>
+          <td>82</td>
+          <td><a href="https://store.steampowered.com/app/342380">Sakura Angels</a></td>
+          <td>55h 52m</td>
+          <td>3h 18m</td>
+          <td>$2.99</td>
+          <td>85.8%</td>
+          <td>3.894</td>
+        </tr>
+        
+        <tr>
+          <td>83</td>
+          <td><a href="https://store.steampowered.com/app/1900">Earth 2160</a></td>
+          <td>7h 08m</td>
+          <td>7h 02m</td>
+          <td>$1.24</td>
+          <td>68.2%</td>
+          <td>3.893</td>
+        </tr>
+        
+        <tr>
+          <td>84</td>
+          <td><a href="https://store.steampowered.com/app/339800">HuniePop</a></td>
+          <td>13h 46m</td>
+          <td>7h 22m</td>
+          <td>$2.49</td>
+          <td>96.1%</td>
+          <td>3.889</td>
+        </tr>
+        
+        <tr>
+          <td>85</td>
+          <td><a href="https://store.steampowered.com/app/342300">Zombie Kill of the Week - Reborn</a></td>
+          <td>4h 51m</td>
+          <td>3h 53m</td>
+          <td>$1.4</td>
+          <td>93.0%</td>
+          <td>3.880</td>
+        </tr>
+        
+        <tr>
+          <td>86</td>
+          <td><a href="https://store.steampowered.com/app/3480">Peggle Deluxe</a></td>
+          <td>8h 55m</td>
+          <td>2h 54m</td>
+          <td>$1.24</td>
+          <td>94.3%</td>
+          <td>3.868</td>
+        </tr>
+        
+        <tr>
+          <td>87</td>
+          <td><a href="https://store.steampowered.com/app/20900">The Witcher: Enhanced Edition Director's Cut</a></td>
+          <td>15h 37m</td>
+          <td>2h 50m</td>
+          <td>$1.49</td>
+          <td>86.2%</td>
+          <td>3.847</td>
+        </tr>
+        
+        <tr>
+          <td>88</td>
+          <td><a href="https://store.steampowered.com/app/222880">Insurgency</a></td>
+          <td>17h 53m</td>
+          <td>3h 57m</td>
+          <td>$1.99</td>
+          <td>91.0%</td>
+          <td>3.842</td>
+        </tr>
+        
+        <tr>
+          <td>89</td>
+          <td><a href="https://store.steampowered.com/app/10680">Aliens vs. Predator</a></td>
+          <td>9h 28m</td>
+          <td>4h 11m</td>
+          <td>$1.49</td>
+          <td>89.0%</td>
+          <td>3.760</td>
+        </tr>
+        
+        <tr>
+          <td>90</td>
+          <td><a href="https://store.steampowered.com/app/9420">Supreme Commander: Forged Alliance</a></td>
+          <td>22h 42m</td>
+          <td>6h 54m</td>
+          <td>$3.24</td>
+          <td>97.2%</td>
+          <td>3.753</td>
+        </tr>
+        
+        <tr>
+          <td>91</td>
+          <td><a href="https://store.steampowered.com/app/211820">Starbound</a></td>
+          <td>60h 29m</td>
+          <td>28h 23m</td>
+          <td>$10.4</td>
+          <td>90.6%</td>
+          <td>3.739</td>
+        </tr>
+        
+        <tr>
+          <td>92</td>
+          <td><a href="https://store.steampowered.com/app/296490">GemCraft - Chasing Shadows</a></td>
+          <td>20h 15m</td>
+          <td>4h 39m</td>
+          <td>$2.49</td>
+          <td>95.9%</td>
+          <td>3.736</td>
+        </tr>
+        
+        <tr>
+          <td>93</td>
+          <td><a href="https://store.steampowered.com/app/248820">Risk of Rain</a></td>
+          <td>16h 17m</td>
+          <td>5h 58m</td>
+          <td>$2.49</td>
+          <td>93.9%</td>
+          <td>3.717</td>
+        </tr>
+        
+        <tr>
+          <td>94</td>
+          <td><a href="https://store.steampowered.com/app/320300">Car Mechanic Simulator 2015</a></td>
+          <td>13h 10m</td>
+          <td>4h 54m</td>
+          <td>$1.99</td>
+          <td>91.3%</td>
+          <td>3.685</td>
+        </tr>
+        
+        <tr>
+          <td>95</td>
+          <td><a href="https://store.steampowered.com/app/48720">Mount & Blade: With Fire & Sword</a></td>
+          <td>23h 05m</td>
+          <td>4h 51m</td>
+          <td>$2.49</td>
+          <td>86.3%</td>
+          <td>3.666</td>
+        </tr>
+        
+        <tr>
+          <td>96</td>
+          <td><a href="https://store.steampowered.com/app/431730">Aseprite</a></td>
+          <td>134h 08m</td>
+          <td>14h 39m</td>
+          <td>$11.99</td>
+          <td>99.0%</td>
+          <td>3.662</td>
+        </tr>
+        
+        <tr>
+          <td>97</td>
+          <td><a href="https://store.steampowered.com/app/234710">Poker Night 2</a></td>
+          <td>7h 05m</td>
+          <td>4h 00m</td>
+          <td>$1.24</td>
+          <td>84.5%</td>
+          <td>3.626</td>
+        </tr>
+        
+        <tr>
+          <td>98</td>
+          <td><a href="https://store.steampowered.com/app/9450">Warhammer 40,000: Dawn of War - Soulstorm</a></td>
+          <td>21h 06m</td>
+          <td>7h 16m</td>
+          <td>$3.24</td>
+          <td>94.6%</td>
+          <td>3.615</td>
+        </tr>
+        
+        <tr>
+          <td>99</td>
+          <td><a href="https://store.steampowered.com/app/215930">Jagged Alliance 2 - Wildfire</a></td>
+          <td>7h 11m</td>
+          <td>7h 03m</td>
+          <td>$1.39</td>
+          <td>70.6%</td>
+          <td>3.613</td>
+        </tr>
+        
+        <tr>
+          <td>100</td>
+          <td><a href="https://store.steampowered.com/app/208400">Avernum: Escape From the Pit</a></td>
+          <td>14h 12m</td>
+          <td>9h 31m</td>
+          <td>$2.99</td>
+          <td>92.7%</td>
+          <td>3.604</td>
+        </tr>
+        
+        <tr>
+          <td>101</td>
+          <td><a href="https://store.steampowered.com/app/232910">TrackMania² Stadium</a></td>
+          <td>25h 49m</td>
+          <td>6h 11m</td>
+          <td>$2.99</td>
+          <td>84.3%</td>
+          <td>3.561</td>
+        </tr>
+        
+        <tr>
+          <td>102</td>
+          <td><a href="https://store.steampowered.com/app/72850">The Elder Scrolls V: Skyrim</a></td>
+          <td>112h 17m</td>
+          <td>50h 21m</td>
+          <td>$19.99</td>
+          <td>94.0%</td>
+          <td>3.535</td>
+        </tr>
+        
+        <tr>
+          <td>103</td>
+          <td><a href="https://store.steampowered.com/app/304730">Train Fever</a></td>
+          <td>18h 27m</td>
+          <td>14h 49m</td>
+          <td>$2.99</td>
+          <td>63.8%</td>
+          <td>3.528</td>
+        </tr>
+        
+        <tr>
+          <td>104</td>
+          <td><a href="https://store.steampowered.com/app/313160">Farming Simulator 15</a></td>
+          <td>72h 09m</td>
+          <td>20h 47m</td>
+          <td>$9.99</td>
+          <td>90.5%</td>
+          <td>3.508</td>
+        </tr>
+        
+        <tr>
+          <td>105</td>
+          <td><a href="https://store.steampowered.com/app/602520">NEKOPARA Vol. 3</a></td>
+          <td>139h 24m</td>
+          <td>3h 53m</td>
+          <td>$6.49</td>
+          <td>97.5%</td>
+          <td>3.496</td>
+        </tr>
+        
+        <tr>
+          <td>106</td>
+          <td><a href="https://store.steampowered.com/app/306020">Bloons TD 5</a></td>
+          <td>23h 46m</td>
+          <td>15h 05m</td>
+          <td>$4.99</td>
+          <td>91.8%</td>
+          <td>3.485</td>
+        </tr>
+        
+        <tr>
+          <td>107</td>
+          <td><a href="https://store.steampowered.com/app/244450">Men of War: Assault Squad 2</a></td>
+          <td>45h 16m</td>
+          <td>13h 25m</td>
+          <td>$5.99</td>
+          <td>84.5%</td>
+          <td>3.478</td>
+        </tr>
+        
+        <tr>
+          <td>108</td>
+          <td><a href="https://store.steampowered.com/app/431960">Wallpaper Engine</a></td>
+          <td>29h 23m</td>
+          <td>6h 46m</td>
+          <td>$3.99</td>
+          <td>97.1%</td>
+          <td>3.430</td>
+        </tr>
+        
+        <tr>
+          <td>109</td>
+          <td><a href="https://store.steampowered.com/app/203160">Tomb Raider</a></td>
+          <td>12h 10m</td>
+          <td>9h 20m</td>
+          <td>$2.99</td>
+          <td>95.9%</td>
+          <td>3.419</td>
+        </tr>
+        
+        <tr>
+          <td>110</td>
+          <td><a href="https://store.steampowered.com/app/333600">NEKOPARA Vol. 1</a></td>
+          <td>57h 02m</td>
+          <td>3h 32m</td>
+          <td>$3.99</td>
+          <td>95.7%</td>
+          <td>3.406</td>
+        </tr>
+        
+        <tr>
+          <td>111</td>
+          <td><a href="https://store.steampowered.com/app/253900">Knights and Merchants</a></td>
+          <td>4h 17m</td>
+          <td>4h 20m</td>
+          <td>$1.4</td>
+          <td>82.0%</td>
+          <td>3.398</td>
+        </tr>
+        
+        <tr>
+          <td>112</td>
+          <td><a href="https://store.steampowered.com/app/221380">Age of Empires II HD</a></td>
+          <td>27h 55m</td>
+          <td>7h 22m</td>
+          <td>$3.99</td>
+          <td>94.3%</td>
+          <td>3.389</td>
+        </tr>
+        
+        <tr>
+          <td>113</td>
+          <td><a href="https://store.steampowered.com/app/343440">Crash Drive 2</a></td>
+          <td>5h 04m</td>
+          <td>4h 47m</td>
+          <td>$1.24</td>
+          <td>85.1%</td>
+          <td>3.378</td>
+        </tr>
+        
+        <tr>
+          <td>114</td>
+          <td><a href="https://store.steampowered.com/app/646570">Slay the Spire</a></td>
+          <td>43h 32m</td>
+          <td>28h 56m</td>
+          <td>$10.7</td>
+          <td>95.5%</td>
+          <td>3.366</td>
+        </tr>
+        
+        <tr>
+          <td>115</td>
+          <td><a href="https://store.steampowered.com/app/247080">Crypt of the NecroDancer</a></td>
+          <td>23h 00m</td>
+          <td>4h 41m</td>
+          <td>$2.99</td>
+          <td>96.8%</td>
+          <td>3.358</td>
+        </tr>
+        
+        <tr>
+          <td>116</td>
+          <td><a href="https://store.steampowered.com/app/571880">Angels with Scaly Wings</a></td>
+          <td>22h 58m</td>
+          <td>24h 45m</td>
+          <td>$6.99</td>
+          <td>98.0%</td>
+          <td>3.342</td>
+        </tr>
+        
+        <tr>
+          <td>117</td>
+          <td><a href="https://store.steampowered.com/app/253290">FOTONICA</a></td>
+          <td>5h 12m</td>
+          <td>6h 01m</td>
+          <td>$1.49</td>
+          <td>88.8%</td>
+          <td>3.334</td>
+        </tr>
+        
+        <tr>
+          <td>118</td>
+          <td><a href="https://store.steampowered.com/app/326460">ShellShock Live</a></td>
+          <td>25h 57m</td>
+          <td>9h 17m</td>
+          <td>$4.19</td>
+          <td>89.7%</td>
+          <td>3.324</td>
+        </tr>
+        
+        <tr>
+          <td>119</td>
+          <td><a href="https://store.steampowered.com/app/532110">Rusty Lake: Roots</a></td>
+          <td>5h 51m</td>
+          <td>4h 35m</td>
+          <td>$1.49</td>
+          <td>95.4%</td>
+          <td>3.315</td>
+        </tr>
+        
+        <tr>
+          <td>120</td>
+          <td><a href="https://store.steampowered.com/app/313740">Sakura Spirit</a></td>
+          <td>40h 18m</td>
+          <td>2h 41m</td>
+          <td>$2.49</td>
+          <td>79.2%</td>
+          <td>3.307</td>
+        </tr>
+        
+        <tr>
+          <td>121</td>
+          <td><a href="https://store.steampowered.com/app/355050">Sky Force Anniversary</a></td>
+          <td>8h 29m</td>
+          <td>9h 38m</td>
+          <td>$2.49</td>
+          <td>91.0%</td>
+          <td>3.302</td>
+        </tr>
+        
+        <tr>
+          <td>122</td>
+          <td><a href="https://store.steampowered.com/app/420110">NEKOPARA Vol. 2</a></td>
+          <td>76h 23m</td>
+          <td>3h 44m</td>
+          <td>$4.99</td>
+          <td>97.5%</td>
+          <td>3.300</td>
+        </tr>
+        
+        <tr>
+          <td>123</td>
+          <td><a href="https://store.steampowered.com/app/7830">Men of War</a></td>
+          <td>13h 46m</td>
+          <td>1h 36m</td>
+          <td>$1.24</td>
+          <td>86.8%</td>
+          <td>3.285</td>
+        </tr>
+        
+        <tr>
+          <td>124</td>
+          <td><a href="https://store.steampowered.com/app/241560">The Crew</a></td>
+          <td>55h 50m</td>
+          <td>23h 49m</td>
+          <td>$7.49</td>
+          <td>67.0%</td>
+          <td>3.261</td>
+        </tr>
+        
+        <tr>
+          <td>125</td>
+          <td><a href="https://store.steampowered.com/app/365590">Tom Clancy’s The Division</a></td>
+          <td>72h 52m</td>
+          <td>33h 44m</td>
+          <td>$9.99</td>
+          <td>65.2%</td>
+          <td>3.236</td>
+        </tr>
+        
+        <tr>
+          <td>126</td>
+          <td><a href="https://store.steampowered.com/app/8980">Borderlands</a></td>
+          <td>27h 45m</td>
+          <td>10h 42m</td>
+          <td>$4.99</td>
+          <td>93.6%</td>
+          <td>3.234</td>
+        </tr>
+        
+        <tr>
+          <td>127</td>
+          <td><a href="https://store.steampowered.com/app/359390">Amnesia: Memories</a></td>
+          <td>15h 40m</td>
+          <td>6h 37m</td>
+          <td>$2.99</td>
+          <td>94.7%</td>
+          <td>3.224</td>
+        </tr>
+        
+        <tr>
+          <td>128</td>
+          <td><a href="https://store.steampowered.com/app/342580">12 Labours of Hercules</a></td>
+          <td>5h 20m</td>
+          <td>4h 54m</td>
+          <td>$1.49</td>
+          <td>93.9%</td>
+          <td>3.220</td>
+        </tr>
+        
+        <tr>
+          <td>129</td>
+          <td><a href="https://store.steampowered.com/app/1930">Two Worlds Epic Edition</a></td>
+          <td>6h 47m</td>
+          <td>6h 47m</td>
+          <td>$1.49</td>
+          <td>70.7%</td>
+          <td>3.219</td>
+        </tr>
+        
+        <tr>
+          <td>130</td>
+          <td><a href="https://store.steampowered.com/app/10500">Empire: Total War</a></td>
+          <td>41h 53m</td>
+          <td>7h 24m</td>
+          <td>$4.99</td>
+          <td>90.9%</td>
+          <td>3.208</td>
+        </tr>
+        
+        <tr>
+          <td>131</td>
+          <td><a href="https://store.steampowered.com/app/375450">NOBUNAGA'S AMBITION: Sphere of Influence - Ascension / 信長の野望･創造 戦国立志伝</a></td>
+          <td>99h 45m</td>
+          <td>189h 49m</td>
+          <td>$23.99</td>
+          <td>54.9%</td>
+          <td>3.146</td>
+        </tr>
+        
+        <tr>
+          <td>132</td>
+          <td><a href="https://store.steampowered.com/app/241600">Rogue Legacy</a></td>
+          <td>13h 40m</td>
+          <td>7h 13m</td>
+          <td>$2.99</td>
+          <td>93.9%</td>
+          <td>3.118</td>
+        </tr>
+        
+        <tr>
+          <td>133</td>
+          <td><a href="https://store.steampowered.com/app/360640">12 Labours of Hercules II: The Cretan Bull</a></td>
+          <td>5h 26m</td>
+          <td>4h 52m</td>
+          <td>$1.49</td>
+          <td>90.2%</td>
+          <td>3.112</td>
+        </tr>
+        
+        <tr>
+          <td>134</td>
+          <td><a href="https://store.steampowered.com/app/384110">Pathologic Classic HD</a></td>
+          <td>10h 05m</td>
+          <td>4h 42m</td>
+          <td>$1.94</td>
+          <td>87.4%</td>
+          <td>3.100</td>
+        </tr>
+        
+        <tr>
+          <td>135</td>
+          <td><a href="https://store.steampowered.com/app/219990">Grim Dawn</a></td>
+          <td>46h 16m</td>
+          <td>13h 49m</td>
+          <td>$7.49</td>
+          <td>91.8%</td>
+          <td>3.098</td>
+        </tr>
+        
+        <tr>
+          <td>136</td>
+          <td><a href="https://store.steampowered.com/app/377160">Fallout 4</a></td>
+          <td>95h 34m</td>
+          <td>46h 46m</td>
+          <td>$14.99</td>
+          <td>69.1%</td>
+          <td>3.083</td>
+        </tr>
+        
+        <tr>
+          <td>137</td>
+          <td><a href="https://store.steampowered.com/app/1250">Killing Floor</a></td>
+          <td>34h 07m</td>
+          <td>4h 51m</td>
+          <td>$3.99</td>
+          <td>95.4%</td>
+          <td>3.075</td>
+        </tr>
+        
+        <tr>
+          <td>138</td>
+          <td><a href="https://store.steampowered.com/app/12320">Sacred Gold</a></td>
+          <td>11h 42m</td>
+          <td>4h 37m</td>
+          <td>$1.99</td>
+          <td>83.0%</td>
+          <td>3.065</td>
+        </tr>
+        
+        <tr>
+          <td>139</td>
+          <td><a href="https://store.steampowered.com/app/247000">Talisman: Digital Edition</a></td>
+          <td>23h 27m</td>
+          <td>4h 00m</td>
+          <td>$2.39</td>
+          <td>75.4%</td>
+          <td>3.055</td>
+        </tr>
+        
+        <tr>
+          <td>140</td>
+          <td><a href="https://store.steampowered.com/app/269650">Dex</a></td>
+          <td>7h 41m</td>
+          <td>6h 25m</td>
+          <td>$1.99</td>
+          <td>86.6%</td>
+          <td>3.055</td>
+        </tr>
+        
+        <tr>
+          <td>141</td>
+          <td><a href="https://store.steampowered.com/app/355980">Dungeon Warfare</a></td>
+          <td>14h 54m</td>
+          <td>7h 32m</td>
+          <td>$3.39</td>
+          <td>97.3%</td>
+          <td>3.041</td>
+        </tr>
+        
+        <tr>
+          <td>142</td>
+          <td><a href="https://store.steampowered.com/app/234140">Mad Max</a></td>
+          <td>22h 05m</td>
+          <td>12h 25m</td>
+          <td>$4.99</td>
+          <td>90.6%</td>
+          <td>3.007</td>
+        </tr>
+        
+        <tr>
+          <td>143</td>
+          <td><a href="https://store.steampowered.com/app/381210">Dead by Daylight</a></td>
+          <td>100h 21m</td>
+          <td>15h 18m</td>
+          <td>$9.99</td>
+          <td>76.4%</td>
+          <td>2.998</td>
+        </tr>
+        
+        <tr>
+          <td>144</td>
+          <td><a href="https://store.steampowered.com/app/3830">Psychonauts</a></td>
+          <td>6h 13m</td>
+          <td>3h 33m</td>
+          <td>$1.49</td>
+          <td>94.9%</td>
+          <td>2.991</td>
+        </tr>
+        
+        <tr>
+          <td>145</td>
+          <td><a href="https://store.steampowered.com/app/351710">Hyperdimension Neptunia Re;Birth2: Sisters Generation / 超次次元ゲイム ネプテューヌRe;Birth2 / 超次次元遊戲 戰機少女 重生2</a></td>
+          <td>67h 30m</td>
+          <td>5h 33m</td>
+          <td>$5.99</td>
+          <td>92.5%</td>
+          <td>2.990</td>
+        </tr>
+        
+        <tr>
+          <td>146</td>
+          <td><a href="https://store.steampowered.com/app/242050">Assassin’s Creed IV Black Flag</a></td>
+          <td>33h 55m</td>
+          <td>21h 37m</td>
+          <td>$7.99</td>
+          <td>88.0%</td>
+          <td>2.982</td>
+        </tr>
+        
+        <tr>
+          <td>147</td>
+          <td><a href="https://store.steampowered.com/app/664180">Draw Puzzle 画之谜</a></td>
+          <td>7h 29m</td>
+          <td>7h 35m</td>
+          <td>$2.49</td>
+          <td>98.3%</td>
+          <td>2.974</td>
+        </tr>
+        
+        <tr>
+          <td>148</td>
+          <td><a href="https://store.steampowered.com/app/365960">rFactor 2</a></td>
+          <td>85h 59m</td>
+          <td>38h 41m</td>
+          <td>$15.99</td>
+          <td>82.2%</td>
+          <td>2.966</td>
+        </tr>
+        
+        <tr>
+          <td>149</td>
+          <td><a href="https://store.steampowered.com/app/22490">Fallout: New Vegas</a></td>
+          <td>46h 27m</td>
+          <td>20h 30m</td>
+          <td>$9.99</td>
+          <td>95.6%</td>
+          <td>2.953</td>
+        </tr>
+        
+        <tr>
+          <td>150</td>
+          <td><a href="https://store.steampowered.com/app/485310">Head Shot</a></td>
+          <td>10h 50m</td>
+          <td>4h 00m</td>
+          <td>$1.9</td>
+          <td>48.7%</td>
+          <td>2.938</td>
+        </tr>
+        
+        <tr>
+          <td>151</td>
+          <td><a href="https://store.steampowered.com/app/249130">LEGO Marvel Super Heroes</a></td>
+          <td>23h 19m</td>
+          <td>10h 39m</td>
+          <td>$4.99</td>
+          <td>92.9%</td>
+          <td>2.933</td>
+        </tr>
+        
+        <tr>
+          <td>152</td>
+          <td><a href="https://store.steampowered.com/app/740260">Crimson Imprint plus -Nonexistent Christmas-</a></td>
+          <td>9h 48m</td>
+          <td>4h 21m</td>
+          <td>$1.99</td>
+          <td>89.4%</td>
+          <td>2.933</td>
+        </tr>
+        
+        <tr>
+          <td>153</td>
+          <td><a href="https://store.steampowered.com/app/203350">King's Bounty: Warriors of the North</a></td>
+          <td>15h 47m</td>
+          <td>5h 00m</td>
+          <td>$2.49</td>
+          <td>82.2%</td>
+          <td>2.931</td>
+        </tr>
+        
+        <tr>
+          <td>154</td>
+          <td><a href="https://store.steampowered.com/app/200510">XCOM: Enemy Unknown</a></td>
+          <td>32h 49m</td>
+          <td>16h 13m</td>
+          <td>$7.49</td>
+          <td>94.8%</td>
+          <td>2.921</td>
+        </tr>
+        
+        <tr>
+          <td>155</td>
+          <td><a href="https://store.steampowered.com/app/390520">PewDiePie: Legend of the Brofist</a></td>
+          <td>5h 29m</td>
+          <td>5h 01m</td>
+          <td>$1.59</td>
+          <td>88.4%</td>
+          <td>2.915</td>
+        </tr>
+        
+        <tr>
+          <td>156</td>
+          <td><a href="https://store.steampowered.com/app/374320">DARK SOULS III</a></td>
+          <td>72h 27m</td>
+          <td>31h 34m</td>
+          <td>$14.99</td>
+          <td>90.6%</td>
+          <td>2.891</td>
+        </tr>
+        
+        <tr>
+          <td>157</td>
+          <td><a href="https://store.steampowered.com/app/635260">CarX Drift Racing Online</a></td>
+          <td>22h 44m</td>
+          <td>13h 17m</td>
+          <td>$5.49</td>
+          <td>90.7%</td>
+          <td>2.870</td>
+        </tr>
+        
+        <tr>
+          <td>158</td>
+          <td><a href="https://store.steampowered.com/app/208500">F1 2012</a></td>
+          <td>32h 55m</td>
+          <td>7h 46m</td>
+          <td>$4.99</td>
+          <td>88.9%</td>
+          <td>2.848</td>
+        </tr>
+        
+        <tr>
+          <td>159</td>
+          <td><a href="https://store.steampowered.com/app/214730">Space Rangers HD: A War Apart</a></td>
+          <td>20h 08m</td>
+          <td>6h 13m</td>
+          <td>$3.74</td>
+          <td>95.2%</td>
+          <td>2.847</td>
+        </tr>
+        
+        <tr>
+          <td>160</td>
+          <td><a href="https://store.steampowered.com/app/335300">DARK SOULS II: Scholar of the First Sin</a></td>
+          <td>47h 44m</td>
+          <td>22h 30m</td>
+          <td>$9.99</td>
+          <td>86.8%</td>
+          <td>2.847</td>
+        </tr>
+        
+        <tr>
+          <td>161</td>
+          <td><a href="https://store.steampowered.com/app/269670">BADLAND: Game of the Year Edition</a></td>
+          <td>5h 46m</td>
+          <td>6h 08m</td>
+          <td>$1.79</td>
+          <td>84.2%</td>
+          <td>2.797</td>
+        </tr>
+        
+        <tr>
+          <td>162</td>
+          <td><a href="https://store.steampowered.com/app/200710">Torchlight II</a></td>
+          <td>21h 43m</td>
+          <td>9h 56m</td>
+          <td>$4.99</td>
+          <td>94.6%</td>
+          <td>2.785</td>
+        </tr>
+        
+        <tr>
+          <td>163</td>
+          <td><a href="https://store.steampowered.com/app/251570">7 Days to Die</a></td>
+          <td>64h 31m</td>
+          <td>14h 40m</td>
+          <td>$8.99</td>
+          <td>81.3%</td>
+          <td>2.783</td>
+        </tr>
+        
+        <tr>
+          <td>164</td>
+          <td><a href="https://store.steampowered.com/app/24960">Battlefield: Bad Company 2</a></td>
+          <td>29h 37m</td>
+          <td>8h 37m</td>
+          <td>$4.99</td>
+          <td>86.8%</td>
+          <td>2.779</td>
+        </tr>
+        
+        <tr>
+          <td>165</td>
+          <td><a href="https://store.steampowered.com/app/377680">Sakura Beach</a></td>
+          <td>25h 13m</td>
+          <td>3h 26m</td>
+          <td>$2.49</td>
+          <td>74.4%</td>
+          <td>2.779</td>
+        </tr>
+        
+        <tr>
+          <td>166</td>
+          <td><a href="https://store.steampowered.com/app/289520">King's Bounty: Dark Side</a></td>
+          <td>17h 15m</td>
+          <td>9h 51m</td>
+          <td>$3.24</td>
+          <td>69.0%</td>
+          <td>2.777</td>
+        </tr>
+        
+        <tr>
+          <td>167</td>
+          <td><a href="https://store.steampowered.com/app/292410">Street Racing Syndicate</a></td>
+          <td>3h 31m</td>
+          <td>3h 19m</td>
+          <td>$1.1</td>
+          <td>82.0%</td>
+          <td>2.774</td>
+        </tr>
+        
+        <tr>
+          <td>168</td>
+          <td><a href="https://store.steampowered.com/app/267920">Gun Metal</a></td>
+          <td>3h 51m</td>
+          <td>3h 30m</td>
+          <td>$1.1</td>
+          <td>76.3%</td>
+          <td>2.773</td>
+        </tr>
+        
+        <tr>
+          <td>169</td>
+          <td><a href="https://store.steampowered.com/app/469600">Legion TD 2</a></td>
+          <td>45h 39m</td>
+          <td>24h 12m</td>
+          <td>$8.99</td>
+          <td>74.7%</td>
+          <td>2.763</td>
+        </tr>
+        
+        <tr>
+          <td>170</td>
+          <td><a href="https://store.steampowered.com/app/353330">Love at First Sight</a></td>
+          <td>8h 13m</td>
+          <td>6h 18m</td>
+          <td>$2.49</td>
+          <td>95.0%</td>
+          <td>2.746</td>
+        </tr>
+        
+        <tr>
+          <td>171</td>
+          <td><a href="https://store.steampowered.com/app/306130">The Elder Scrolls Online</a></td>
+          <td>71h 12m</td>
+          <td>19h 21m</td>
+          <td>$9.99</td>
+          <td>73.8%</td>
+          <td>2.742</td>
+        </tr>
+        
+        <tr>
+          <td>172</td>
+          <td><a href="https://store.steampowered.com/app/269210">Hero Siege</a></td>
+          <td>11h 57m</td>
+          <td>4h 05m</td>
+          <td>$2.3</td>
+          <td>79.5%</td>
+          <td>2.735</td>
+        </tr>
+        
+        <tr>
+          <td>173</td>
+          <td><a href="https://store.steampowered.com/app/308040">Back to Bed</a></td>
+          <td>4h 52m</td>
+          <td>3h 14m</td>
+          <td>$1.19</td>
+          <td>81.9%</td>
+          <td>2.729</td>
+        </tr>
+        
+        <tr>
+          <td>174</td>
+          <td><a href="https://store.steampowered.com/app/375200">Sakura Fantasy</a></td>
+          <td>27h 44m</td>
+          <td>3h 00m</td>
+          <td>$2.99</td>
+          <td>89.4%</td>
+          <td>2.728</td>
+        </tr>
+        
+        <tr>
+          <td>175</td>
+          <td><a href="https://store.steampowered.com/app/592580">PRO EVOLUTION SOCCER 2018</a></td>
+          <td>127h 07m</td>
+          <td>36h 47m</td>
+          <td>$14.99</td>
+          <td>59.8%</td>
+          <td>2.726</td>
+        </tr>
+        
+        <tr>
+          <td>176</td>
+          <td><a href="https://store.steampowered.com/app/40950">Stronghold HD</a></td>
+          <td>8h 05m</td>
+          <td>2h 20m</td>
+          <td>$1.49</td>
+          <td>93.5%</td>
+          <td>2.726</td>
+        </tr>
+        
+        <tr>
+          <td>177</td>
+          <td><a href="https://store.steampowered.com/app/379980">Panzermadels: Tank Dating Simulator</a></td>
+          <td>68h 46m</td>
+          <td>3h 12m</td>
+          <td>$4.99</td>
+          <td>91.0%</td>
+          <td>2.705</td>
+        </tr>
+        
+        <tr>
+          <td>178</td>
+          <td><a href="https://store.steampowered.com/app/321360">Primal Carnage: Extinction</a></td>
+          <td>43h 33m</td>
+          <td>3h 18m</td>
+          <td>$3.24</td>
+          <td>72.9%</td>
+          <td>2.699</td>
+        </tr>
+        
+        <tr>
+          <td>179</td>
+          <td><a href="https://store.steampowered.com/app/17460">Mass Effect</a></td>
+          <td>21h 37m</td>
+          <td>9h 26m</td>
+          <td>$4.99</td>
+          <td>94.2%</td>
+          <td>2.695</td>
+        </tr>
+        
+        <tr>
+          <td>180</td>
+          <td><a href="https://store.steampowered.com/app/310060">Knights of Pen and Paper 2</a></td>
+          <td>6h 19m</td>
+          <td>6h 06m</td>
+          <td>$1.99</td>
+          <td>85.6%</td>
+          <td>2.672</td>
+        </tr>
+        
+        <tr>
+          <td>181</td>
+          <td><a href="https://store.steampowered.com/app/310360">Higurashi When They Cry Hou - Ch.1 Onikakushi</a></td>
+          <td>4h 22m</td>
+          <td>3h 52m</td>
+          <td>$1.49</td>
+          <td>96.5%</td>
+          <td>2.661</td>
+        </tr>
+        
+        <tr>
+          <td>182</td>
+          <td><a href="https://store.steampowered.com/app/18500">Defense Grid: The Awakening</a></td>
+          <td>10h 20m</td>
+          <td>4h 32m</td>
+          <td>$2.49</td>
+          <td>96.8%</td>
+          <td>2.660</td>
+        </tr>
+        
+        <tr>
+          <td>183</td>
+          <td><a href="https://store.steampowered.com/app/301750">RADical ROACH Remastered</a></td>
+          <td>4h 53m</td>
+          <td>5h 34m</td>
+          <td>$1.1</td>
+          <td>51.1%</td>
+          <td>2.635</td>
+        </tr>
+        
+        <tr>
+          <td>184</td>
+          <td><a href="https://store.steampowered.com/app/254960">Silent Storm Gold Edition</a></td>
+          <td>9h 58m</td>
+          <td>5h 15m</td>
+          <td>$2.49</td>
+          <td>90.5%</td>
+          <td>2.631</td>
+        </tr>
+        
+        <tr>
+          <td>185</td>
+          <td><a href="https://store.steampowered.com/app/42910">Magicka</a></td>
+          <td>9h 54m</td>
+          <td>4h 57m</td>
+          <td>$2.49</td>
+          <td>93.2%</td>
+          <td>2.620</td>
+        </tr>
+        
+        <tr>
+          <td>186</td>
+          <td><a href="https://store.steampowered.com/app/366760">Adorables</a></td>
+          <td>8h 12m</td>
+          <td>7h 32m</td>
+          <td>$2.24</td>
+          <td>74.5%</td>
+          <td>2.614</td>
+        </tr>
+        
+        <tr>
+          <td>187</td>
+          <td><a href="https://store.steampowered.com/app/208480">Assassin’s Creed III</a></td>
+          <td>29h 39m</td>
+          <td>18h 30m</td>
+          <td>$6.79</td>
+          <td>75.8%</td>
+          <td>2.614</td>
+        </tr>
+        
+        <tr>
+          <td>188</td>
+          <td><a href="https://store.steampowered.com/app/98800">Dungeons of Dredmor</a></td>
+          <td>14h 21m</td>
+          <td>3h 18m</td>
+          <td>$2.49</td>
+          <td>94.3%</td>
+          <td>2.606</td>
+        </tr>
+        
+        <tr>
+          <td>189</td>
+          <td><a href="https://store.steampowered.com/app/272600">Detective Grimoire</a></td>
+          <td>4h 32m</td>
+          <td>3h 14m</td>
+          <td>$1.39</td>
+          <td>94.5%</td>
+          <td>2.604</td>
+        </tr>
+        
+        <tr>
+          <td>190</td>
+          <td><a href="https://store.steampowered.com/app/422250">ShipLord</a></td>
+          <td>5h 30m</td>
+          <td>4h 26m</td>
+          <td>$1.9</td>
+          <td>57.4%</td>
+          <td>2.600</td>
+        </tr>
+        
+        <tr>
+          <td>191</td>
+          <td><a href="https://store.steampowered.com/app/262690">Little Racers STREET</a></td>
+          <td>4h 09m</td>
+          <td>3h 21m</td>
+          <td>$1.19</td>
+          <td>82.8%</td>
+          <td>2.595</td>
+        </tr>
+        
+        <tr>
+          <td>192</td>
+          <td><a href="https://store.steampowered.com/app/253980">Enclave</a></td>
+          <td>4h 07m</td>
+          <td>4h 00m</td>
+          <td>$1.24</td>
+          <td>78.5%</td>
+          <td>2.569</td>
+        </tr>
+        
+        <tr>
+          <td>193</td>
+          <td><a href="https://store.steampowered.com/app/239700">Hate Plus</a></td>
+          <td>6h 36m</td>
+          <td>8h 18m</td>
+          <td>$2.49</td>
+          <td>86.4%</td>
+          <td>2.568</td>
+        </tr>
+        
+        <tr>
+          <td>194</td>
+          <td><a href="https://store.steampowered.com/app/25890">Hearts of Iron III</a></td>
+          <td>19h 10m</td>
+          <td>3h 30m</td>
+          <td>$2.49</td>
+          <td>78.1%</td>
+          <td>2.568</td>
+        </tr>
+        
+        <tr>
+          <td>195</td>
+          <td><a href="https://store.steampowered.com/app/243780">PixelJunk Monsters Ultimate</a></td>
+          <td>5h 46m</td>
+          <td>4h 14m</td>
+          <td>$1.49</td>
+          <td>77.4%</td>
+          <td>2.565</td>
+        </tr>
+        
+        <tr>
+          <td>196</td>
+          <td><a href="https://store.steampowered.com/app/251370">Escape Goat</a></td>
+          <td>3h 42m</td>
+          <td>2h 52m</td>
+          <td>$1.24</td>
+          <td>97.5%</td>
+          <td>2.561</td>
+        </tr>
+        
+        <tr>
+          <td>197</td>
+          <td><a href="https://store.steampowered.com/app/599750">Crisis in the Kremlin</a></td>
+          <td>7h 19m</td>
+          <td>7h 36m</td>
+          <td>$2.44</td>
+          <td>83.7%</td>
+          <td>2.559</td>
+        </tr>
+        
+        <tr>
+          <td>198</td>
+          <td><a href="https://store.steampowered.com/app/220240">Far Cry 3</a></td>
+          <td>24h 28m</td>
+          <td>15h 26m</td>
+          <td>$6.79</td>
+          <td>89.2%</td>
+          <td>2.553</td>
+        </tr>
+        
+        <tr>
+          <td>199</td>
+          <td><a href="https://store.steampowered.com/app/238010">Deus Ex: Human Revolution - Director's Cut</a></td>
+          <td>13h 24m</td>
+          <td>5h 11m</td>
+          <td>$2.99</td>
+          <td>91.5%</td>
+          <td>2.552</td>
+        </tr>
+        
+        <tr>
+          <td>200</td>
+          <td><a href="https://store.steampowered.com/app/31280">Poker Night at the Inventory</a></td>
+          <td>5h 04m</td>
+          <td>2h 40m</td>
+          <td>$1.24</td>
+          <td>86.1%</td>
+          <td>2.551</td>
+        </tr>
+        
+        <tr>
+          <td>201</td>
+          <td><a href="https://store.steampowered.com/app/25830">Knights of Honor</a></td>
+          <td>11h 16m</td>
+          <td>4h 11m</td>
+          <td>$2.49</td>
+          <td>92.4%</td>
+          <td>2.547</td>
+        </tr>
+        
+        <tr>
+          <td>202</td>
+          <td><a href="https://store.steampowered.com/app/748490">The Legend of Heroes: Trails of Cold Steel II</a></td>
+          <td>82h 50m</td>
+          <td>85h 22m</td>
+          <td>$31.99</td>
+          <td>96.9%</td>
+          <td>2.547</td>
+        </tr>
+        
+        <tr>
+          <td>203</td>
+          <td><a href="https://store.steampowered.com/app/327510">WASTED</a></td>
+          <td>6h 06m</td>
+          <td>3h 03m</td>
+          <td>$1.29</td>
+          <td>75.6%</td>
+          <td>2.529</td>
+        </tr>
+        
+        <tr>
+          <td>204</td>
+          <td><a href="https://store.steampowered.com/app/248390">Craft The World</a></td>
+          <td>20h 42m</td>
+          <td>8h 52m</td>
+          <td>$4.74</td>
+          <td>88.1%</td>
+          <td>2.519</td>
+        </tr>
+        
+        <tr>
+          <td>205</td>
+          <td><a href="https://store.steampowered.com/app/252010">Oniken: Unstoppable Edition</a></td>
+          <td>4h 26m</td>
+          <td>3h 10m</td>
+          <td>$1.24</td>
+          <td>83.1%</td>
+          <td>2.510</td>
+        </tr>
+        
+        <tr>
+          <td>206</td>
+          <td><a href="https://store.steampowered.com/app/262830">Crimsonland</a></td>
+          <td>12h 23m</td>
+          <td>7h 45m</td>
+          <td>$3.49</td>
+          <td>89.2%</td>
+          <td>2.505</td>
+        </tr>
+        
+        <tr>
+          <td>207</td>
+          <td><a href="https://store.steampowered.com/app/550010">Happy Room</a></td>
+          <td>4h 48m</td>
+          <td>2h 54m</td>
+          <td>$1.24</td>
+          <td>83.2%</td>
+          <td>2.505</td>
+        </tr>
+        
+        <tr>
+          <td>208</td>
+          <td><a href="https://store.steampowered.com/app/283290">Nosferatu: The Wrath of Malachi</a></td>
+          <td>2h 55m</td>
+          <td>3h 00m</td>
+          <td>$1.1</td>
+          <td>85.5%</td>
+          <td>2.503</td>
+        </tr>
+        
+        <tr>
+          <td>209</td>
+          <td><a href="https://store.steampowered.com/app/257990">Oozi: Earth Adventure</a></td>
+          <td>4h 37m</td>
+          <td>2h 53m</td>
+          <td>$1.24</td>
+          <td>84.9%</td>
+          <td>2.498</td>
+        </tr>
+        
+        <tr>
+          <td>210</td>
+          <td><a href="https://store.steampowered.com/app/41500">Torchlight</a></td>
+          <td>11h 51m</td>
+          <td>5h 27m</td>
+          <td>$2.99</td>
+          <td>92.9%</td>
+          <td>2.496</td>
+        </tr>
+        
+        <tr>
+          <td>211</td>
+          <td><a href="https://store.steampowered.com/app/115110">Stacking</a></td>
+          <td>5h 02m</td>
+          <td>3h 24m</td>
+          <td>$1.49</td>
+          <td>89.4%</td>
+          <td>2.482</td>
+        </tr>
+        
+        <tr>
+          <td>212</td>
+          <td><a href="https://store.steampowered.com/app/360650">12 Labours of Hercules III: Girl Power</a></td>
+          <td>4h 51m</td>
+          <td>3h 44m</td>
+          <td>$1.49</td>
+          <td>86.8%</td>
+          <td>2.479</td>
+        </tr>
+        
+        <tr>
+          <td>213</td>
+          <td><a href="https://store.steampowered.com/app/598700">The Vagrant</a></td>
+          <td>5h 21m</td>
+          <td>5h 28m</td>
+          <td>$1.99</td>
+          <td>91.1%</td>
+          <td>2.476</td>
+        </tr>
+        
+        <tr>
+          <td>214</td>
+          <td><a href="https://store.steampowered.com/app/3720">Evil Genius</a></td>
+          <td>9h 24m</td>
+          <td>4h 26m</td>
+          <td>$2.49</td>
+          <td>95.3%</td>
+          <td>2.471</td>
+        </tr>
+        
+        <tr>
+          <td>215</td>
+          <td><a href="https://store.steampowered.com/app/61700">Might & Magic: Clash of Heroes</a></td>
+          <td>11h 29m</td>
+          <td>3h 58m</td>
+          <td>$2.49</td>
+          <td>91.0%</td>
+          <td>2.466</td>
+        </tr>
+        
+        <tr>
+          <td>216</td>
+          <td><a href="https://store.steampowered.com/app/353270">Hyperdimension Neptunia Re;Birth3 V Generation / 神次次元ゲイム ネプテューヌRe;Birth3 V CENTURY / 神次次元遊戲 戰機少女 重生3 Ｖ世紀</a></td>
+          <td>30h 59m</td>
+          <td>7h 33m</td>
+          <td>$5.99</td>
+          <td>96.1%</td>
+          <td>2.455</td>
+        </tr>
+        
+        <tr>
+          <td>217</td>
+          <td><a href="https://store.steampowered.com/app/115100">Costume Quest</a></td>
+          <td>4h 31m</td>
+          <td>3h 26m</td>
+          <td>$1.49</td>
+          <td>92.8%</td>
+          <td>2.452</td>
+        </tr>
+        
+        <tr>
+          <td>218</td>
+          <td><a href="https://store.steampowered.com/app/48240">Anno 2070</a></td>
+          <td>34h 24m</td>
+          <td>11h 39m</td>
+          <td>$4.99</td>
+          <td>61.0%</td>
+          <td>2.449</td>
+        </tr>
+        
+        <tr>
+          <td>219</td>
+          <td><a href="https://store.steampowered.com/app/220260">Farming Simulator 2013 Titanium Edition</a></td>
+          <td>43h 17m</td>
+          <td>9h 12m</td>
+          <td>$7.49</td>
+          <td>91.5%</td>
+          <td>2.437</td>
+        </tr>
+        
+        <tr>
+          <td>220</td>
+          <td><a href="https://store.steampowered.com/app/288160">The Room</a></td>
+          <td>3h 19m</td>
+          <td>2h 53m</td>
+          <td>$1.24</td>
+          <td>97.3%</td>
+          <td>2.427</td>
+        </tr>
+        
+        <tr>
+          <td>221</td>
+          <td><a href="https://store.steampowered.com/app/758190">Dragon Cliff</a></td>
+          <td>28h 26m</td>
+          <td>19h 00m</td>
+          <td>$8.49</td>
+          <td>88.5%</td>
+          <td>2.424</td>
+        </tr>
+        
+        <tr>
+          <td>222</td>
+          <td><a href="https://store.steampowered.com/app/245170">Skullgirls</a></td>
+          <td>11h 04m</td>
+          <td>5h 16m</td>
+          <td>$2.99</td>
+          <td>94.5%</td>
+          <td>2.412</td>
+        </tr>
+        
+        <tr>
+          <td>223</td>
+          <td><a href="https://store.steampowered.com/app/426000">HunieCam Studio</a></td>
+          <td>6h 36m</td>
+          <td>3h 51m</td>
+          <td>$1.74</td>
+          <td>82.8%</td>
+          <td>2.400</td>
+        </tr>
+        
+        <tr>
+          <td>224</td>
+          <td><a href="https://store.steampowered.com/app/384500">Zombie Party</a></td>
+          <td>5h 44m</td>
+          <td>5h 12m</td>
+          <td>$1.99</td>
+          <td>87.4%</td>
+          <td>2.397</td>
+        </tr>
+        
+        <tr>
+          <td>225</td>
+          <td><a href="https://store.steampowered.com/app/58610">Wargame: European Escalation</a></td>
+          <td>21h 25m</td>
+          <td>1h 47m</td>
+          <td>$1.99</td>
+          <td>77.1%</td>
+          <td>2.393</td>
+        </tr>
+        
+        <tr>
+          <td>226</td>
+          <td><a href="https://store.steampowered.com/app/415200">Motorsport Manager</a></td>
+          <td>34h 35m</td>
+          <td>15h 33m</td>
+          <td>$8.74</td>
+          <td>89.8%</td>
+          <td>2.383</td>
+        </tr>
+        
+        <tr>
+          <td>227</td>
+          <td><a href="https://store.steampowered.com/app/9200">RAGE</a></td>
+          <td>11h 23m</td>
+          <td>5h 09m</td>
+          <td>$2.49</td>
+          <td>77.4%</td>
+          <td>2.381</td>
+        </tr>
+        
+        <tr>
+          <td>228</td>
+          <td><a href="https://store.steampowered.com/app/225260">Brutal Legend</a></td>
+          <td>6h 28m</td>
+          <td>4h 59m</td>
+          <td>$2.24</td>
+          <td>93.7%</td>
+          <td>2.376</td>
+        </tr>
+        
+        <tr>
+          <td>229</td>
+          <td><a href="https://store.steampowered.com/app/251290">The Legend of Heroes: Trails in the Sky SC</a></td>
+          <td>41h 36m</td>
+          <td>53h 54m</td>
+          <td>$19.49</td>
+          <td>97.6%</td>
+          <td>2.371</td>
+        </tr>
+        
+        <tr>
+          <td>230</td>
+          <td><a href="https://store.steampowered.com/app/225540">Just Cause 3</a></td>
+          <td>21h 38m</td>
+          <td>10h 18m</td>
+          <td>$4.49</td>
+          <td>71.3%</td>
+          <td>2.370</td>
+        </tr>
+        
+        <tr>
+          <td>231</td>
+          <td><a href="https://store.steampowered.com/app/413420">Danganronpa 2: Goodbye Despair</a></td>
+          <td>29h 56m</td>
+          <td>28h 22m</td>
+          <td>$11.99</td>
+          <td>97.5%</td>
+          <td>2.370</td>
+        </tr>
+        
+        <tr>
+          <td>232</td>
+          <td><a href="https://store.steampowered.com/app/220740">Chaos on Deponia</a></td>
+          <td>6h 08m</td>
+          <td>4h 16m</td>
+          <td>$1.99</td>
+          <td>92.1%</td>
+          <td>2.366</td>
+        </tr>
+        
+        <tr>
+          <td>233</td>
+          <td><a href="https://store.steampowered.com/app/359320">Elite Dangerous</a></td>
+          <td>93h 22m</td>
+          <td>22h 15m</td>
+          <td>$13.49</td>
+          <td>69.9%</td>
+          <td>2.362</td>
+        </tr>
+        
+        <tr>
+          <td>234</td>
+          <td><a href="https://store.steampowered.com/app/241910">Goodbye Deponia</a></td>
+          <td>6h 38m</td>
+          <td>4h 11m</td>
+          <td>$1.99</td>
+          <td>89.1%</td>
+          <td>2.359</td>
+        </tr>
+        
+        <tr>
+          <td>235</td>
+          <td><a href="https://store.steampowered.com/app/96000">The Tiny Bang Story</a></td>
+          <td>3h 59m</td>
+          <td>3h 52m</td>
+          <td>$1.49</td>
+          <td>89.4%</td>
+          <td>2.355</td>
+        </tr>
+        
+        <tr>
+          <td>236</td>
+          <td><a href="https://store.steampowered.com/app/412880">Drift Streets Japan</a></td>
+          <td>26h 33m</td>
+          <td>2h 49m</td>
+          <td>$2.49</td>
+          <td>67.5%</td>
+          <td>2.344</td>
+        </tr>
+        
+        <tr>
+          <td>237</td>
+          <td><a href="https://store.steampowered.com/app/34030">Napoleon: Total War</a></td>
+          <td>26h 48m</td>
+          <td>5h 57m</td>
+          <td>$4.99</td>
+          <td>92.1%</td>
+          <td>2.331</td>
+        </tr>
+        
+        <tr>
+          <td>238</td>
+          <td><a href="https://store.steampowered.com/app/298030">Total Annihilation</a></td>
+          <td>9h 42m</td>
+          <td>3h 45m</td>
+          <td>$2.49</td>
+          <td>96.2%</td>
+          <td>2.329</td>
+        </tr>
+        
+        <tr>
+          <td>239</td>
+          <td><a href="https://store.steampowered.com/app/251870">Go! Go! Nippon! ~My First Trip to Japan~</a></td>
+          <td>50h 29m</td>
+          <td>3h 26m</td>
+          <td>$4.99</td>
+          <td>88.3%</td>
+          <td>2.329</td>
+        </tr>
+        
+        <tr>
+          <td>240</td>
+          <td><a href="https://store.steampowered.com/app/263300">BlazBlue: Calamity Trigger</a></td>
+          <td>5h 19m</td>
+          <td>3h 03m</td>
+          <td>$1.49</td>
+          <td>86.1%</td>
+          <td>2.326</td>
+        </tr>
+        
+        <tr>
+          <td>241</td>
+          <td><a href="https://store.steampowered.com/app/257690">J.U.L.I.A.: Among the Stars</a></td>
+          <td>10h 43m</td>
+          <td>10h 40m</td>
+          <td>$3.99</td>
+          <td>86.7%</td>
+          <td>2.323</td>
+        </tr>
+        
+        <tr>
+          <td>242</td>
+          <td><a href="https://store.steampowered.com/app/20920">The Witcher 2: Assassins of Kings Enhanced Edition</a></td>
+          <td>13h 42m</td>
+          <td>4h 28m</td>
+          <td>$2.99</td>
+          <td>88.7%</td>
+          <td>2.321</td>
+        </tr>
+        
+        <tr>
+          <td>243</td>
+          <td><a href="https://store.steampowered.com/app/21690">Resident Evil 5/ Biohazard 5</a></td>
+          <td>17h 05m</td>
+          <td>10h 38m</td>
+          <td>$4.99</td>
+          <td>85.5%</td>
+          <td>2.311</td>
+        </tr>
+        
+        <tr>
+          <td>244</td>
+          <td><a href="https://store.steampowered.com/app/39680">The Guild II Renaissance</a></td>
+          <td>13h 11m</td>
+          <td>3h 52m</td>
+          <td>$2.49</td>
+          <td>80.6%</td>
+          <td>2.310</td>
+        </tr>
+        
+        <tr>
+          <td>245</td>
+          <td><a href="https://store.steampowered.com/app/454060">Blueprint Tycoon</a></td>
+          <td>3h 48m</td>
+          <td>4h 39m</td>
+          <td>$1.49</td>
+          <td>81.6%</td>
+          <td>2.303</td>
+        </tr>
+        
+        <tr>
+          <td>246</td>
+          <td><a href="https://store.steampowered.com/app/490390">神明的一天世界(God's One Day World)</a></td>
+          <td>36h 36m</td>
+          <td>3h 03m</td>
+          <td>$3.99</td>
+          <td>86.7%</td>
+          <td>2.295</td>
+        </tr>
+        
+        <tr>
+          <td>247</td>
+          <td><a href="https://store.steampowered.com/app/2100">Dark Messiah of Might & Magic</a></td>
+          <td>10h 28m</td>
+          <td>3h 31m</td>
+          <td>$2.49</td>
+          <td>93.8%</td>
+          <td>2.286</td>
+        </tr>
+        
+        <tr>
+          <td>248</td>
+          <td><a href="https://store.steampowered.com/app/265610">Epic Battle Fantasy 4</a></td>
+          <td>10h 44m</td>
+          <td>4h 40m</td>
+          <td>$2.99</td>
+          <td>96.3%</td>
+          <td>2.281</td>
+        </tr>
+        
+        <tr>
+          <td>249</td>
+          <td><a href="https://store.steampowered.com/app/250560">Fight The Dragon</a></td>
+          <td>6h 47m</td>
+          <td>4h 42m</td>
+          <td>$1.99</td>
+          <td>80.4%</td>
+          <td>2.280</td>
+        </tr>
+        
+        <tr>
+          <td>250</td>
+          <td><a href="https://store.steampowered.com/app/339580">Ember</a></td>
+          <td>6h 38m</td>
+          <td>8h 05m</td>
+          <td>$2.49</td>
+          <td>77.4%</td>
+          <td>2.276</td>
+        </tr>
+        
+        <tr>
+          <td>251</td>
+          <td><a href="https://store.steampowered.com/app/209000">Batman: Arkham Origins</a></td>
+          <td>17h 46m</td>
+          <td>9h 53m</td>
+          <td>$4.99</td>
+          <td>85.6%</td>
+          <td>2.273</td>
+        </tr>
+        
+        <tr>
+          <td>252</td>
+          <td><a href="https://store.steampowered.com/app/15700">Oddworld: Abe's Oddysee</a></td>
+          <td>3h 50m</td>
+          <td>3h 57m</td>
+          <td>$1.49</td>
+          <td>86.9%</td>
+          <td>2.269</td>
+        </tr>
+        
+        <tr>
+          <td>253</td>
+          <td><a href="https://store.steampowered.com/app/307960">IL-2 Sturmovik: Battle of Stalingrad</a></td>
+          <td>45h 31m</td>
+          <td>62h 05m</td>
+          <td>$16.99</td>
+          <td>72.5%</td>
+          <td>2.267</td>
+        </tr>
+        
+        <tr>
+          <td>254</td>
+          <td><a href="https://store.steampowered.com/app/6420">Nexus - The Jupiter Incident</a></td>
+          <td>5h 34m</td>
+          <td>7h 56m</td>
+          <td>$2.49</td>
+          <td>84.9%</td>
+          <td>2.266</td>
+        </tr>
+        
+        <tr>
+          <td>255</td>
+          <td><a href="https://store.steampowered.com/app/3320">Insaniquarium Deluxe</a></td>
+          <td>4h 38m</td>
+          <td>1h 52m</td>
+          <td>$1.24</td>
+          <td>95.5%</td>
+          <td>2.265</td>
+        </tr>
+        
+        <tr>
+          <td>256</td>
+          <td><a href="https://store.steampowered.com/app/113200">The Binding of Isaac</a></td>
+          <td>24h 18m</td>
+          <td>5h 43m</td>
+          <td>$4.99</td>
+          <td>95.8%</td>
+          <td>2.264</td>
+        </tr>
+        
+        <tr>
+          <td>257</td>
+          <td><a href="https://store.steampowered.com/app/252530">OMSI 2: Steam Edition</a></td>
+          <td>176h 21m</td>
+          <td>28h 35m</td>
+          <td>$24.49</td>
+          <td>77.9%</td>
+          <td>2.257</td>
+        </tr>
+        
+        <tr>
+          <td>258</td>
+          <td><a href="https://store.steampowered.com/app/282400">SuperPower 2 Steam Edition</a></td>
+          <td>16h 40m</td>
+          <td>3h 04m</td>
+          <td>$2.49</td>
+          <td>78.4%</td>
+          <td>2.250</td>
+        </tr>
+        
+        <tr>
+          <td>259</td>
+          <td><a href="https://store.steampowered.com/app/375480">Chronicon</a></td>
+          <td>19h 05m</td>
+          <td>19h 05m</td>
+          <td>$7.99</td>
+          <td>94.2%</td>
+          <td>2.250</td>
+        </tr>
+        
+        <tr>
+          <td>260</td>
+          <td><a href="https://store.steampowered.com/app/208580">STAR WARS Knights of the Old Republic II - The Sith Lords</a></td>
+          <td>19h 38m</td>
+          <td>5h 07m</td>
+          <td>$3.99</td>
+          <td>89.1%</td>
+          <td>2.239</td>
+        </tr>
+        
+        <tr>
+          <td>261</td>
+          <td><a href="https://store.steampowered.com/app/410110">12 is Better Than 6</a></td>
+          <td>5h 36m</td>
+          <td>6h 32m</td>
+          <td>$2.29</td>
+          <td>84.7%</td>
+          <td>2.238</td>
+        </tr>
+        
+        <tr>
+          <td>262</td>
+          <td><a href="https://store.steampowered.com/app/458710">Kingdom Rush Frontiers</a></td>
+          <td>12h 45m</td>
+          <td>10h 29m</td>
+          <td>$4.99</td>
+          <td>96.6%</td>
+          <td>2.238</td>
+        </tr>
+        
+        <tr>
+          <td>263</td>
+          <td><a href="https://store.steampowered.com/app/325610">Total War: ATTILA</a></td>
+          <td>55h 21m</td>
+          <td>20h 21m</td>
+          <td>$11.24</td>
+          <td>74.5%</td>
+          <td>2.225</td>
+        </tr>
+        
+        <tr>
+          <td>264</td>
+          <td><a href="https://store.steampowered.com/app/401680">POSTAL Redux</a></td>
+          <td>3h 37m</td>
+          <td>3h 00m</td>
+          <td>$1.34</td>
+          <td>90.4%</td>
+          <td>2.223</td>
+        </tr>
+        
+        <tr>
+          <td>265</td>
+          <td><a href="https://store.steampowered.com/app/20510">S.T.A.L.K.E.R.: Clear Sky</a></td>
+          <td>13h 55m</td>
+          <td>4h 17m</td>
+          <td>$2.99</td>
+          <td>86.0%</td>
+          <td>2.222</td>
+        </tr>
+        
+        <tr>
+          <td>266</td>
+          <td><a href="https://store.steampowered.com/app/15620">Warhammer 40,000: Dawn of War II</a></td>
+          <td>23h 25m</td>
+          <td>6h 42m</td>
+          <td>$4.99</td>
+          <td>88.4%</td>
+          <td>2.219</td>
+        </tr>
+        
+        <tr>
+          <td>267</td>
+          <td><a href="https://store.steampowered.com/app/228200">Company of Heroes</a></td>
+          <td>21h 36m</td>
+          <td>6h 46m</td>
+          <td>$4.99</td>
+          <td>91.6%</td>
+          <td>2.219</td>
+        </tr>
+        
+        <tr>
+          <td>268</td>
+          <td><a href="https://store.steampowered.com/app/297020">The Culling Of The Cows</a></td>
+          <td>4h 08m</td>
+          <td>4h 09m</td>
+          <td>$1.39</td>
+          <td>74.1%</td>
+          <td>2.207</td>
+        </tr>
+        
+        <tr>
+          <td>269</td>
+          <td><a href="https://store.steampowered.com/app/24810">Command & Conquer 3: Kane's Wrath</a></td>
+          <td>18h 17m</td>
+          <td>7h 34m</td>
+          <td>$4.99</td>
+          <td>93.6%</td>
+          <td>2.205</td>
+        </tr>
+        
+        <tr>
+          <td>270</td>
+          <td><a href="https://store.steampowered.com/app/33230">Assassin's Creed 2 Deluxe Edition</a></td>
+          <td>20h 44m</td>
+          <td>15h 02m</td>
+          <td>$6.79</td>
+          <td>84.6%</td>
+          <td>2.201</td>
+        </tr>
+        
+        <tr>
+          <td>271</td>
+          <td><a href="https://store.steampowered.com/app/304390">FOR HONOR</a></td>
+          <td>51h 12m</td>
+          <td>19h 54m</td>
+          <td>$7.49</td>
+          <td>51.4%</td>
+          <td>2.189</td>
+        </tr>
+        
+        <tr>
+          <td>272</td>
+          <td><a href="https://store.steampowered.com/app/250400">How to Survive</a></td>
+          <td>5h 27m</td>
+          <td>2h 50m</td>
+          <td>$1.49</td>
+          <td>83.0%</td>
+          <td>2.188</td>
+        </tr>
+        
+        <tr>
+          <td>273</td>
+          <td><a href="https://store.steampowered.com/app/289950">Construction Simulator 2015</a></td>
+          <td>27h 06m</td>
+          <td>17h 46m</td>
+          <td>$7.49</td>
+          <td>74.5%</td>
+          <td>2.184</td>
+        </tr>
+        
+        <tr>
+          <td>274</td>
+          <td><a href="https://store.steampowered.com/app/4920">Natural Selection 2</a></td>
+          <td>13h 40m</td>
+          <td>3h 00m</td>
+          <td>$2.49</td>
+          <td>84.7%</td>
+          <td>2.178</td>
+        </tr>
+        
+        <tr>
+          <td>275</td>
+          <td><a href="https://store.steampowered.com/app/405310">LEGO MARVEL's Avengers</a></td>
+          <td>27h 30m</td>
+          <td>11h 23m</td>
+          <td>$6.79</td>
+          <td>83.5%</td>
+          <td>2.175</td>
+        </tr>
+        
+        <tr>
+          <td>276</td>
+          <td><a href="https://store.steampowered.com/app/538680">The Legend of Heroes: Trails of Cold Steel</a></td>
+          <td>66h 28m</td>
+          <td>60h 27m</td>
+          <td>$27.99</td>
+          <td>95.9%</td>
+          <td>2.171</td>
+        </tr>
+        
+        <tr>
+          <td>277</td>
+          <td><a href="https://store.steampowered.com/app/248860">NEO Scavenger</a></td>
+          <td>15h 08m</td>
+          <td>5h 15m</td>
+          <td>$3.74</td>
+          <td>90.9%</td>
+          <td>2.166</td>
+        </tr>
+        
+        <tr>
+          <td>278</td>
+          <td><a href="https://store.steampowered.com/app/255320">Edna & Harvey: The Breakout</a></td>
+          <td>4h 26m</td>
+          <td>3h 26m</td>
+          <td>$1.49</td>
+          <td>82.7%</td>
+          <td>2.166</td>
+        </tr>
+        
+        <tr>
+          <td>279</td>
+          <td><a href="https://store.steampowered.com/app/230070">The Age of Decadence</a></td>
+          <td>18h 33m</td>
+          <td>9h 13m</td>
+          <td>$4.99</td>
+          <td>82.6%</td>
+          <td>2.165</td>
+        </tr>
+        
+        <tr>
+          <td>280</td>
+          <td><a href="https://store.steampowered.com/app/265810">The Sandbox</a></td>
+          <td>17h 40m</td>
+          <td>17h 47m</td>
+          <td>$4.99</td>
+          <td>60.8%</td>
+          <td>2.161</td>
+        </tr>
+        
+        <tr>
+          <td>281</td>
+          <td><a href="https://store.steampowered.com/app/323470">DRAGON BALL XENOVERSE</a></td>
+          <td>30h 49m</td>
+          <td>19h 16m</td>
+          <td>$9.99</td>
+          <td>88.5%</td>
+          <td>2.159</td>
+        </tr>
+        
+        <tr>
+          <td>282</td>
+          <td><a href="https://store.steampowered.com/app/258890">Type:Rider</a></td>
+          <td>3h 41m</td>
+          <td>3h 02m</td>
+          <td>$1.24</td>
+          <td>79.9%</td>
+          <td>2.153</td>
+        </tr>
+        
+        <tr>
+          <td>283</td>
+          <td><a href="https://store.steampowered.com/app/744190">Rusty Lake Paradise</a></td>
+          <td>4h 20m</td>
+          <td>4h 38m</td>
+          <td>$1.99</td>
+          <td>95.6%</td>
+          <td>2.152</td>
+        </tr>
+        
+        <tr>
+          <td>284</td>
+          <td><a href="https://store.steampowered.com/app/24240">PAYDAY The Heist</a></td>
+          <td>12h 03m</td>
+          <td>3h 57m</td>
+          <td>$2.99</td>
+          <td>93.2%</td>
+          <td>2.152</td>
+        </tr>
+        
+        <tr>
+          <td>285</td>
+          <td><a href="https://store.steampowered.com/app/216890">Blood Bowl: Chaos Edition</a></td>
+          <td>19h 28m</td>
+          <td>7h 18m</td>
+          <td>$4.49</td>
+          <td>80.7%</td>
+          <td>2.144</td>
+        </tr>
+        
+        <tr>
+          <td>286</td>
+          <td><a href="https://store.steampowered.com/app/283230">Spoiler Alert</a></td>
+          <td>4h 28m</td>
+          <td>4h 08m</td>
+          <td>$1.49</td>
+          <td>74.3%</td>
+          <td>2.142</td>
+        </tr>
+        
+        <tr>
+          <td>287</td>
+          <td><a href="https://store.steampowered.com/app/328270">Leviathan: The Last Day of the Decade</a></td>
+          <td>4h 26m</td>
+          <td>3h 18m</td>
+          <td>$1.49</td>
+          <td>83.2%</td>
+          <td>2.137</td>
+        </tr>
+        
+        <tr>
+          <td>288</td>
+          <td><a href="https://store.steampowered.com/app/307070">Memories of a Vagabond</a></td>
+          <td>4h 13m</td>
+          <td>3h 32m</td>
+          <td>$1.49</td>
+          <td>82.4%</td>
+          <td>2.135</td>
+        </tr>
+        
+        <tr>
+          <td>289</td>
+          <td><a href="https://store.steampowered.com/app/42960">Victoria II</a></td>
+          <td>37h 59m</td>
+          <td>3h 52m</td>
+          <td>$4.99</td>
+          <td>87.8%</td>
+          <td>2.131</td>
+        </tr>
+        
+        <tr>
+          <td>290</td>
+          <td><a href="https://store.steampowered.com/app/322680">BLACKHOLE</a></td>
+          <td>7h 30m</td>
+          <td>3h 48m</td>
+          <td>$2.24</td>
+          <td>89.2%</td>
+          <td>2.126</td>
+        </tr>
+        
+        <tr>
+          <td>291</td>
+          <td><a href="https://store.steampowered.com/app/247020">Cook, Serve, Delicious!</a></td>
+          <td>6h 13m</td>
+          <td>3h 11m</td>
+          <td>$1.99</td>
+          <td>94.9%</td>
+          <td>2.121</td>
+        </tr>
+        
+        <tr>
+          <td>292</td>
+          <td><a href="https://store.steampowered.com/app/40800">Super Meat Boy</a></td>
+          <td>4h 55m</td>
+          <td>2h 14m</td>
+          <td>$1.49</td>
+          <td>94.9%</td>
+          <td>2.111</td>
+        </tr>
+        
+        <tr>
+          <td>293</td>
+          <td><a href="https://store.steampowered.com/app/48190">Assassin’s Creed Brotherhood</a></td>
+          <td>25h 59m</td>
+          <td>14h 06m</td>
+          <td>$7.99</td>
+          <td>88.0%</td>
+          <td>2.108</td>
+        </tr>
+        
+        <tr>
+          <td>294</td>
+          <td><a href="https://store.steampowered.com/app/255710">Cities: Skylines</a></td>
+          <td>28h 00m</td>
+          <td>10h 29m</td>
+          <td>$7.49</td>
+          <td>92.1%</td>
+          <td>2.106</td>
+        </tr>
+        
+        <tr>
+          <td>295</td>
+          <td><a href="https://store.steampowered.com/app/402180">Sakura Swim Club</a></td>
+          <td>26h 04m</td>
+          <td>2h 47m</td>
+          <td>$3.49</td>
+          <td>86.0%</td>
+          <td>2.098</td>
+        </tr>
+        
+        <tr>
+          <td>296</td>
+          <td><a href="https://store.steampowered.com/app/396790">Dracula's Legacy</a></td>
+          <td>4h 19m</td>
+          <td>3h 40m</td>
+          <td>$1.49</td>
+          <td>78.5%</td>
+          <td>2.097</td>
+        </tr>
+        
+        <tr>
+          <td>297</td>
+          <td><a href="https://store.steampowered.com/app/219740">Don't Starve</a></td>
+          <td>14h 46m</td>
+          <td>4h 24m</td>
+          <td>$3.74</td>
+          <td>97.1%</td>
+          <td>2.092</td>
+        </tr>
+        
+        <tr>
+          <td>298</td>
+          <td><a href="https://store.steampowered.com/app/270450">Robot Roller-Derby Disco Dodgeball</a></td>
+          <td>6h 14m</td>
+          <td>3h 12m</td>
+          <td>$1.99</td>
+          <td>92.8%</td>
+          <td>2.083</td>
+        </tr>
+        
+        <tr>
+          <td>299</td>
+          <td><a href="https://store.steampowered.com/app/665180">Dark Elf</a></td>
+          <td>4h 22m</td>
+          <td>3h 07m</td>
+          <td>$1.59</td>
+          <td>89.6%</td>
+          <td>2.079</td>
+        </tr>
+        
+        <tr>
+          <td>300</td>
+          <td><a href="https://store.steampowered.com/app/4580">Warhammer 40,000: Dawn of War - Dark Crusade</a></td>
+          <td>12h 42m</td>
+          <td>3h 53m</td>
+          <td>$3.24</td>
+          <td>95.5%</td>
+          <td>2.070</td>
+        </tr>
+        
+        <tr>
+          <td>301</td>
+          <td><a href="https://store.steampowered.com/app/22100">Mount & Blade</a></td>
+          <td>11h 06m</td>
+          <td>2h 50m</td>
+          <td>$2.49</td>
+          <td>91.9%</td>
+          <td>2.069</td>
+        </tr>
+        
+        <tr>
+          <td>302</td>
+          <td><a href="https://store.steampowered.com/app/405010">Bitardia</a></td>
+          <td>3h 46m</td>
+          <td>3h 18m</td>
+          <td>$1.49</td>
+          <td>87.4%</td>
+          <td>2.068</td>
+        </tr>
+        
+        <tr>
+          <td>303</td>
+          <td><a href="https://store.steampowered.com/app/243200">Memoria</a></td>
+          <td>5h 15m</td>
+          <td>3h 55m</td>
+          <td>$1.99</td>
+          <td>90.8%</td>
+          <td>2.068</td>
+        </tr>
+        
+        <tr>
+          <td>304</td>
+          <td><a href="https://store.steampowered.com/app/39670">Chaser</a></td>
+          <td>3h 35m</td>
+          <td>3h 21m</td>
+          <td>$1.24</td>
+          <td>74.0%</td>
+          <td>2.067</td>
+        </tr>
+        
+        <tr>
+          <td>305</td>
+          <td><a href="https://store.steampowered.com/app/266210">One Way Heroics</a></td>
+          <td>6h 35m</td>
+          <td>2h 12m</td>
+          <td>$1.74</td>
+          <td>94.5%</td>
+          <td>2.067</td>
+        </tr>
+        
+        <tr>
+          <td>306</td>
+          <td><a href="https://store.steampowered.com/app/296570">Lords of Xulima</a></td>
+          <td>16h 35m</td>
+          <td>23h 43m</td>
+          <td>$7.99</td>
+          <td>83.2%</td>
+          <td>2.066</td>
+        </tr>
+        
+        <tr>
+          <td>307</td>
+          <td><a href="https://store.steampowered.com/app/427820">Hitman GO: Definitive Edition</a></td>
+          <td>4h 27m</td>
+          <td>3h 27m</td>
+          <td>$1.59</td>
+          <td>83.8%</td>
+          <td>2.066</td>
+        </tr>
+        
+        <tr>
+          <td>308</td>
+          <td><a href="https://store.steampowered.com/app/218640">Lucius</a></td>
+          <td>4h 46m</td>
+          <td>3h 02m</td>
+          <td>$1.49</td>
+          <td>80.8%</td>
+          <td>2.062</td>
+        </tr>
+        
+        <tr>
+          <td>309</td>
+          <td><a href="https://store.steampowered.com/app/475150">Titan Quest Anniversary Edition</a></td>
+          <td>14h 12m</td>
+          <td>5h 38m</td>
+          <td>$3.99</td>
+          <td>92.0%</td>
+          <td>2.062</td>
+        </tr>
+        
+        <tr>
+          <td>310</td>
+          <td><a href="https://store.steampowered.com/app/413150">Stardew Valley</a></td>
+          <td>39h 53m</td>
+          <td>16h 11m</td>
+          <td>$11.99</td>
+          <td>97.3%</td>
+          <td>2.061</td>
+        </tr>
+        
+        <tr>
+          <td>311</td>
+          <td><a href="https://store.steampowered.com/app/541570">Sally Face</a></td>
+          <td>4h 01m</td>
+          <td>4h 30m</td>
+          <td>$2.0</td>
+          <td>96.9%</td>
+          <td>2.059</td>
+        </tr>
+        
+        <tr>
+          <td>312</td>
+          <td><a href="https://store.steampowered.com/app/340730">Sunrider Academy</a></td>
+          <td>7h 12m</td>
+          <td>5h 00m</td>
+          <td>$2.49</td>
+          <td>85.4%</td>
+          <td>2.059</td>
+        </tr>
+        
+        <tr>
+          <td>313</td>
+          <td><a href="https://store.steampowered.com/app/259680">Tales of Maj'Eyal</a></td>
+          <td>13h 35m</td>
+          <td>4h 09m</td>
+          <td>$3.49</td>
+          <td>95.6%</td>
+          <td>2.056</td>
+        </tr>
+        
+        <tr>
+          <td>314</td>
+          <td><a href="https://store.steampowered.com/app/224900">Iron Sky: Invasion</a></td>
+          <td>7h 09m</td>
+          <td>7h 02m</td>
+          <td>$1.99</td>
+          <td>57.4%</td>
+          <td>2.047</td>
+        </tr>
+        
+        <tr>
+          <td>315</td>
+          <td><a href="https://store.steampowered.com/app/219150">Hotline Miami</a></td>
+          <td>6h 46m</td>
+          <td>4h 02m</td>
+          <td>$2.49</td>
+          <td>97.5%</td>
+          <td>2.046</td>
+        </tr>
+        
+        <tr>
+          <td>316</td>
+          <td><a href="https://store.steampowered.com/app/8190">Just Cause 2</a></td>
+          <td>13h 04m</td>
+          <td>3h 24m</td>
+          <td>$2.99</td>
+          <td>91.7%</td>
+          <td>2.045</td>
+        </tr>
+        
+        <tr>
+          <td>317</td>
+          <td><a href="https://store.steampowered.com/app/426790">Grow Up</a></td>
+          <td>5h 23m</td>
+          <td>6h 06m</td>
+          <td>$2.49</td>
+          <td>88.9%</td>
+          <td>2.045</td>
+        </tr>
+        
+        <tr>
+          <td>318</td>
+          <td><a href="https://store.steampowered.com/app/261490">Bedlam</a></td>
+          <td>3h 30m</td>
+          <td>3h 29m</td>
+          <td>$1.29</td>
+          <td>75.4%</td>
+          <td>2.042</td>
+        </tr>
+        
+        <tr>
+          <td>319</td>
+          <td><a href="https://store.steampowered.com/app/10090">Call of Duty: World at War</a></td>
+          <td>34h 41m</td>
+          <td>13h 14m</td>
+          <td>$9.79</td>
+          <td>92.9%</td>
+          <td>2.033</td>
+        </tr>
+        
+        <tr>
+          <td>320</td>
+          <td><a href="https://store.steampowered.com/app/102500">Kingdoms of Amalur: Reckoning</a></td>
+          <td>21h 43m</td>
+          <td>6h 09m</td>
+          <td>$4.99</td>
+          <td>87.7%</td>
+          <td>2.031</td>
+        </tr>
+        
+        <tr>
+          <td>321</td>
+          <td><a href="https://store.steampowered.com/app/43190">The Haunted: Hells Reach</a></td>
+          <td>5h 27m</td>
+          <td>3h 12m</td>
+          <td>$1.79</td>
+          <td>86.8%</td>
+          <td>2.026</td>
+        </tr>
+        
+        <tr>
+          <td>322</td>
+          <td><a href="https://store.steampowered.com/app/511470">Glass Masquerade</a></td>
+          <td>3h 38m</td>
+          <td>3h 32m</td>
+          <td>$1.74</td>
+          <td>98.2%</td>
+          <td>2.023</td>
+        </tr>
+        
+        <tr>
+          <td>323</td>
+          <td><a href="https://store.steampowered.com/app/312530">Duck Game</a></td>
+          <td>20h 13m</td>
+          <td>5h 57m</td>
+          <td>$5.19</td>
+          <td>95.6%</td>
+          <td>2.020</td>
+        </tr>
+        
+        <tr>
+          <td>324</td>
+          <td><a href="https://store.steampowered.com/app/235250">Super Sanctum TD</a></td>
+          <td>4h 50m</td>
+          <td>1h 39m</td>
+          <td>$1.24</td>
+          <td>88.6%</td>
+          <td>2.018</td>
+        </tr>
+        
+        <tr>
+          <td>325</td>
+          <td><a href="https://store.steampowered.com/app/232090">Killing Floor 2</a></td>
+          <td>58h 23m</td>
+          <td>13h 00m</td>
+          <td>$11.99</td>
+          <td>87.6%</td>
+          <td>2.012</td>
+        </tr>
+        
+        <tr>
+          <td>326</td>
+          <td><a href="https://store.steampowered.com/app/230820">The Night of the Rabbit</a></td>
+          <td>5h 10m</td>
+          <td>3h 46m</td>
+          <td>$1.99</td>
+          <td>90.6%</td>
+          <td>2.010</td>
+        </tr>
+        
+        <tr>
+          <td>327</td>
+          <td><a href="https://store.steampowered.com/app/9050">DOOM 3</a></td>
+          <td>5h 05m</td>
+          <td>1h 35m</td>
+          <td>$1.24</td>
+          <td>87.8%</td>
+          <td>2.008</td>
+        </tr>
+        
+        <tr>
+          <td>328</td>
+          <td><a href="https://store.steampowered.com/app/346110">ARK: Survival Evolved</a></td>
+          <td>142h 45m</td>
+          <td>24h 09m</td>
+          <td>$19.79</td>
+          <td>67.6%</td>
+          <td>2.007</td>
+        </tr>
+        
+        <tr>
+          <td>329</td>
+          <td><a href="https://store.steampowered.com/app/20570">Warhammer 40,000: Dawn of War II Chaos Rising</a></td>
+          <td>21h 55m</td>
+          <td>5h 28m</td>
+          <td>$4.99</td>
+          <td>91.4%</td>
+          <td>2.006</td>
+        </tr>
+        
+        <tr>
+          <td>330</td>
+          <td><a href="https://store.steampowered.com/app/292030">The Witcher 3: Wild Hunt</a></td>
+          <td>63h 21m</td>
+          <td>26h 31m</td>
+          <td>$19.99</td>
+          <td>97.7%</td>
+          <td>2.003</td>
+        </tr>
+        
+        <tr>
+          <td>331</td>
+          <td><a href="https://store.steampowered.com/app/209270">Hero Academy</a></td>
+          <td>8h 46m</td>
+          <td>1h 29m</td>
+          <td>$1.24</td>
+          <td>68.8%</td>
+          <td>2.002</td>
+        </tr>
+        
+        <tr>
+          <td>332</td>
+          <td><a href="https://store.steampowered.com/app/274560">Revolution Ace</a></td>
+          <td>4h 18m</td>
+          <td>2h 39m</td>
+          <td>$1.24</td>
+          <td>73.4%</td>
+          <td>1.997</td>
+        </tr>
+        
+        <tr>
+          <td>333</td>
+          <td><a href="https://store.steampowered.com/app/281990">Stellaris</a></td>
+          <td>73h 59m</td>
+          <td>22h 37m</td>
+          <td>$15.99</td>
+          <td>77.8%</td>
+          <td>1.990</td>
+        </tr>
+        
+        <tr>
+          <td>334</td>
+          <td><a href="https://store.steampowered.com/app/233450">Prison Architect</a></td>
+          <td>26h 11m</td>
+          <td>9h 40m</td>
+          <td>$7.49</td>
+          <td>93.5%</td>
+          <td>1.987</td>
+        </tr>
+        
+        <tr>
+          <td>335</td>
+          <td><a href="https://store.steampowered.com/app/239820">Game Dev Tycoon</a></td>
+          <td>13h 50m</td>
+          <td>7h 49m</td>
+          <td>$4.99</td>
+          <td>95.3%</td>
+          <td>1.985</td>
+        </tr>
+        
+        <tr>
+          <td>336</td>
+          <td><a href="https://store.steampowered.com/app/244070">Sid Meier’s Ace Patrol</a></td>
+          <td>4h 25m</td>
+          <td>2h 51m</td>
+          <td>$1.24</td>
+          <td>69.0%</td>
+          <td>1.976</td>
+        </tr>
+        
+        <tr>
+          <td>337</td>
+          <td><a href="https://store.steampowered.com/app/234940">The 39 Steps</a></td>
+          <td>4h 05m</td>
+          <td>3h 37m</td>
+          <td>$1.49</td>
+          <td>76.5%</td>
+          <td>1.972</td>
+        </tr>
+        
+        <tr>
+          <td>338</td>
+          <td><a href="https://store.steampowered.com/app/515040">Make America Great Again: The Trump Presidency</a></td>
+          <td>3h 15m</td>
+          <td>3h 22m</td>
+          <td>$1.49</td>
+          <td>88.8%</td>
+          <td>1.972</td>
+        </tr>
+        
+        <tr>
+          <td>339</td>
+          <td><a href="https://store.steampowered.com/app/50130">Mafia II</a></td>
+          <td>19h 43m</td>
+          <td>12h 21m</td>
+          <td>$7.49</td>
+          <td>94.5%</td>
+          <td>1.969</td>
+        </tr>
+        
+        <tr>
+          <td>340</td>
+          <td><a href="https://store.steampowered.com/app/406090">Lost Moon</a></td>
+          <td>5h 18m</td>
+          <td>5h 31m</td>
+          <td>$1.99</td>
+          <td>72.3%</td>
+          <td>1.964</td>
+        </tr>
+        
+        <tr>
+          <td>341</td>
+          <td><a href="https://store.steampowered.com/app/413410">Danganronpa: Trigger Happy Havoc</a></td>
+          <td>25h 06m</td>
+          <td>23h 16m</td>
+          <td>$11.99</td>
+          <td>97.3%</td>
+          <td>1.961</td>
+        </tr>
+        
+        <tr>
+          <td>342</td>
+          <td><a href="https://store.steampowered.com/app/257750">Bloody Trapland</a></td>
+          <td>4h 08m</td>
+          <td>2h 54m</td>
+          <td>$1.49</td>
+          <td>84.2%</td>
+          <td>1.957</td>
+        </tr>
+        
+        <tr>
+          <td>343</td>
+          <td><a href="https://store.steampowered.com/app/260160">The Last Tinker: City of Colors</a></td>
+          <td>5h 53m</td>
+          <td>3h 55m</td>
+          <td>$1.99</td>
+          <td>81.0%</td>
+          <td>1.954</td>
+        </tr>
+        
+        <tr>
+          <td>344</td>
+          <td><a href="https://store.steampowered.com/app/599460">Weapon Shop Fantasy</a></td>
+          <td>11h 27m</td>
+          <td>6h 07m</td>
+          <td>$3.49</td>
+          <td>81.3%</td>
+          <td>1.949</td>
+        </tr>
+        
+        <tr>
+          <td>345</td>
+          <td><a href="https://store.steampowered.com/app/208650">Batman: Arkham Knight</a></td>
+          <td>24h 59m</td>
+          <td>14h 30m</td>
+          <td>$6.79</td>
+          <td>69.4%</td>
+          <td>1.946</td>
+        </tr>
+        
+        <tr>
+          <td>346</td>
+          <td><a href="https://store.steampowered.com/app/22330">The Elder Scrolls IV: Oblivion Game of the Year Edition</a></td>
+          <td>28h 51m</td>
+          <td>8h 13m</td>
+          <td>$7.49</td>
+          <td>94.7%</td>
+          <td>1.946</td>
+        </tr>
+        
+        <tr>
+          <td>347</td>
+          <td><a href="https://store.steampowered.com/app/282900">Hyperdimension Neptunia Re;Birth1 / 超次次元ゲイム ネプテューヌRe;Birth1 / 超次次元遊戲戰機少女重生1</a></td>
+          <td>21h 32m</td>
+          <td>6h 54m</td>
+          <td>$5.99</td>
+          <td>95.4%</td>
+          <td>1.941</td>
+        </tr>
+        
+        <tr>
+          <td>348</td>
+          <td><a href="https://store.steampowered.com/app/274170">Hotline Miami 2: Wrong Number</a></td>
+          <td>12h 16m</td>
+          <td>5h 08m</td>
+          <td>$3.74</td>
+          <td>91.5%</td>
+          <td>1.941</td>
+        </tr>
+        
+        <tr>
+          <td>349</td>
+          <td><a href="https://store.steampowered.com/app/322330">Don't Starve Together</a></td>
+          <td>26h 38m</td>
+          <td>8h 27m</td>
+          <td>$7.49</td>
+          <td>96.5%</td>
+          <td>1.932</td>
+        </tr>
+        
+        <tr>
+          <td>350</td>
+          <td><a href="https://store.steampowered.com/app/285440">Crimzon Clover WORLD IGNITION</a></td>
+          <td>7h 54m</td>
+          <td>2h 04m</td>
+          <td>$1.99</td>
+          <td>95.0%</td>
+          <td>1.930</td>
+        </tr>
+        
+        <tr>
+          <td>351</td>
+          <td><a href="https://store.steampowered.com/app/815780">PIPE by BMX Streets</a></td>
+          <td>17h 06m</td>
+          <td>25h 16m</td>
+          <td>$9.99</td>
+          <td>92.7%</td>
+          <td>1.929</td>
+        </tr>
+        
+        <tr>
+          <td>352</td>
+          <td><a href="https://store.steampowered.com/app/35130">Lara Croft and the Guardian of Light</a></td>
+          <td>4h 35m</td>
+          <td>2h 07m</td>
+          <td>$1.49</td>
+          <td>92.0%</td>
+          <td>1.924</td>
+        </tr>
+        
+        <tr>
+          <td>353</td>
+          <td><a href="https://store.steampowered.com/app/200260">Batman: Arkham City - Game of the Year Edition</a></td>
+          <td>14h 43m</td>
+          <td>6h 50m</td>
+          <td>$4.99</td>
+          <td>95.7%</td>
+          <td>1.923</td>
+        </tr>
+        
+        <tr>
+          <td>354</td>
+          <td><a href="https://store.steampowered.com/app/274190">Broforce</a></td>
+          <td>9h 23m</td>
+          <td>5h 54m</td>
+          <td>$3.74</td>
+          <td>96.6%</td>
+          <td>1.923</td>
+        </tr>
+        
+        <tr>
+          <td>355</td>
+          <td><a href="https://store.steampowered.com/app/35700">Trine Enchanted Edition</a></td>
+          <td>5h 28m</td>
+          <td>3h 41m</td>
+          <td>$2.24</td>
+          <td>95.9%</td>
+          <td>1.922</td>
+        </tr>
+        
+        <tr>
+          <td>356</td>
+          <td><a href="https://store.steampowered.com/app/289300">Faces of War</a></td>
+          <td>5h 53m</td>
+          <td>1h 17m</td>
+          <td>$1.24</td>
+          <td>86.7%</td>
+          <td>1.921</td>
+        </tr>
+        
+        <tr>
+          <td>357</td>
+          <td><a href="https://store.steampowered.com/app/575490">Let's Draw</a></td>
+          <td>4h 12m</td>
+          <td>4h 02m</td>
+          <td>$1.9</td>
+          <td>50.8%</td>
+          <td>1.920</td>
+        </tr>
+        
+        <tr>
+          <td>358</td>
+          <td><a href="https://store.steampowered.com/app/4700">Medieval II: Total War</a></td>
+          <td>26h 41m</td>
+          <td>3h 44m</td>
+          <td>$4.99</td>
+          <td>95.6%</td>
+          <td>1.912</td>
+        </tr>
+        
+        <tr>
+          <td>359</td>
+          <td><a href="https://store.steampowered.com/app/588690">Peace, Death!</a></td>
+          <td>3h 53m</td>
+          <td>4h 12m</td>
+          <td>$1.99</td>
+          <td>94.2%</td>
+          <td>1.911</td>
+        </tr>
+        
+        <tr>
+          <td>360</td>
+          <td><a href="https://store.steampowered.com/app/391540">Undertale</a></td>
+          <td>13h 35m</td>
+          <td>7h 18m</td>
+          <td>$4.99</td>
+          <td>95.6%</td>
+          <td>1.907</td>
+        </tr>
+        
+        <tr>
+          <td>361</td>
+          <td><a href="https://store.steampowered.com/app/383120">Empyrion - Galactic Survival</a></td>
+          <td>50h 14m</td>
+          <td>10h 34m</td>
+          <td>$9.99</td>
+          <td>82.5%</td>
+          <td>1.903</td>
+        </tr>
+        
+        <tr>
+          <td>362</td>
+          <td><a href="https://store.steampowered.com/app/262060">Darkest Dungeon</a></td>
+          <td>25h 07m</td>
+          <td>11h 19m</td>
+          <td>$7.49</td>
+          <td>84.5%</td>
+          <td>1.901</td>
+        </tr>
+        
+        <tr>
+          <td>363</td>
+          <td><a href="https://store.steampowered.com/app/48110">Silent Hunter 5: Battle of the Atlantic</a></td>
+          <td>13h 22m</td>
+          <td>17h 38m</td>
+          <td>$3.39</td>
+          <td>42.0%</td>
+          <td>1.901</td>
+        </tr>
+        
+        <tr>
+          <td>364</td>
+          <td><a href="https://store.steampowered.com/app/264730">Deadly 30</a></td>
+          <td>3h 19m</td>
+          <td>2h 57m</td>
+          <td>$1.24</td>
+          <td>75.2%</td>
+          <td>1.897</td>
+        </tr>
+        
+        <tr>
+          <td>365</td>
+          <td><a href="https://store.steampowered.com/app/11450">Overlord</a></td>
+          <td>4h 46m</td>
+          <td>1h 20m</td>
+          <td>$1.24</td>
+          <td>92.8%</td>
+          <td>1.887</td>
+        </tr>
+        
+        <tr>
+          <td>366</td>
+          <td><a href="https://store.steampowered.com/app/369580">NotTheNameWeWanted</a></td>
+          <td>2h 41m</td>
+          <td>2h 26m</td>
+          <td>$1.19</td>
+          <td>87.7%</td>
+          <td>1.883</td>
+        </tr>
+        
+        <tr>
+          <td>367</td>
+          <td><a href="https://store.steampowered.com/app/297000">Heroes of Might & Magic III - HD Edition</a></td>
+          <td>31h 46m</td>
+          <td>6h 13m</td>
+          <td>$5.9</td>
+          <td>68.1%</td>
+          <td>1.881</td>
+        </tr>
+        
+        <tr>
+          <td>368</td>
+          <td><a href="https://store.steampowered.com/app/2500">Shadowgrounds</a></td>
+          <td>2h 52m</td>
+          <td>2h 05m</td>
+          <td>$1.4</td>
+          <td>80.0%</td>
+          <td>1.880</td>
+        </tr>
+        
+        <tr>
+          <td>369</td>
+          <td><a href="https://store.steampowered.com/app/41000">Serious Sam HD: The First Encounter</a></td>
+          <td>5h 30m</td>
+          <td>3h 39m</td>
+          <td>$2.24</td>
+          <td>93.8%</td>
+          <td>1.877</td>
+        </tr>
+        
+        <tr>
+          <td>370</td>
+          <td><a href="https://store.steampowered.com/app/337150">Sentinels of the Multiverse</a></td>
+          <td>7h 33m</td>
+          <td>5h 24m</td>
+          <td>$2.99</td>
+          <td>87.6%</td>
+          <td>1.871</td>
+        </tr>
+        
+        <tr>
+          <td>371</td>
+          <td><a href="https://store.steampowered.com/app/357780">Defend Your Life: TD</a></td>
+          <td>4h 58m</td>
+          <td>4h 12m</td>
+          <td>$1.99</td>
+          <td>81.5%</td>
+          <td>1.870</td>
+        </tr>
+        
+        <tr>
+          <td>372</td>
+          <td><a href="https://store.steampowered.com/app/382050">Eon Altar</a></td>
+          <td>3h 48m</td>
+          <td>3h 19m</td>
+          <td>$1.69</td>
+          <td>88.9%</td>
+          <td>1.869</td>
+        </tr>
+        
+        <tr>
+          <td>373</td>
+          <td><a href="https://store.steampowered.com/app/353640">Train Valley</a></td>
+          <td>5h 11m</td>
+          <td>3h 20m</td>
+          <td>$1.99</td>
+          <td>89.0%</td>
+          <td>1.860</td>
+        </tr>
+        
+        <tr>
+          <td>374</td>
+          <td><a href="https://store.steampowered.com/app/294100">RimWorld</a></td>
+          <td>87h 14m</td>
+          <td>37h 18m</td>
+          <td>$29.99</td>
+          <td>97.6%</td>
+          <td>1.857</td>
+        </tr>
+        
+        <tr>
+          <td>375</td>
+          <td><a href="https://store.steampowered.com/app/48220">Might & Magic: Heroes VI</a></td>
+          <td>33h 20m</td>
+          <td>10h 54m</td>
+          <td>$4.99</td>
+          <td>48.6%</td>
+          <td>1.855</td>
+        </tr>
+        
+        <tr>
+          <td>376</td>
+          <td><a href="https://store.steampowered.com/app/761890">Albion Online</a></td>
+          <td>43h 41m</td>
+          <td>59h 37m</td>
+          <td>$19.76</td>
+          <td>71.7%</td>
+          <td>1.852</td>
+        </tr>
+        
+        <tr>
+          <td>377</td>
+          <td><a href="https://store.steampowered.com/app/57690">Tropico 4</a></td>
+          <td>10h 27m</td>
+          <td>3h 29m</td>
+          <td>$2.99</td>
+          <td>91.6%</td>
+          <td>1.848</td>
+        </tr>
+        
+        <tr>
+          <td>378</td>
+          <td><a href="https://store.steampowered.com/app/15320">IL-2 Sturmovik: 1946</a></td>
+          <td>13h 55m</td>
+          <td>1h 57m</td>
+          <td>$2.49</td>
+          <td>88.0%</td>
+          <td>1.842</td>
+        </tr>
+        
+        <tr>
+          <td>379</td>
+          <td><a href="https://store.steampowered.com/app/409100">The Purring Quest</a></td>
+          <td>3h 23m</td>
+          <td>3h 02m</td>
+          <td>$1.49</td>
+          <td>85.5%</td>
+          <td>1.839</td>
+        </tr>
+        
+        <tr>
+          <td>380</td>
+          <td><a href="https://store.steampowered.com/app/463270">Ghost 1.0</a></td>
+          <td>9h 32m</td>
+          <td>8h 25m</td>
+          <td>$4.54</td>
+          <td>93.2%</td>
+          <td>1.838</td>
+        </tr>
+        
+        <tr>
+          <td>381</td>
+          <td><a href="https://store.steampowered.com/app/201790">Orcs Must Die! 2</a></td>
+          <td>10h 05m</td>
+          <td>5h 08m</td>
+          <td>$3.74</td>
+          <td>95.5%</td>
+          <td>1.837</td>
+        </tr>
+        
+        <tr>
+          <td>382</td>
+          <td><a href="https://store.steampowered.com/app/487430">KARAKARA</a></td>
+          <td>5h 22m</td>
+          <td>4h 40m</td>
+          <td>$2.49</td>
+          <td>91.2%</td>
+          <td>1.833</td>
+        </tr>
+        
+        <tr>
+          <td>383</td>
+          <td><a href="https://store.steampowered.com/app/259060">Dominions 4: Thrones of Ascension</a></td>
+          <td>17h 06m</td>
+          <td>17h 44m</td>
+          <td>$8.74</td>
+          <td>91.8%</td>
+          <td>1.829</td>
+        </tr>
+        
+        <tr>
+          <td>384</td>
+          <td><a href="https://store.steampowered.com/app/22120">Penumbra: Black Plague Gold Edition</a></td>
+          <td>3h 31m</td>
+          <td>2h 20m</td>
+          <td>$1.49</td>
+          <td>95.1%</td>
+          <td>1.828</td>
+        </tr>
+        
+        <tr>
+          <td>385</td>
+          <td><a href="https://store.steampowered.com/app/680320">The Heiress</a></td>
+          <td>3h 40m</td>
+          <td>3h 01m</td>
+          <td>$1.59</td>
+          <td>87.4%</td>
+          <td>1.827</td>
+        </tr>
+        
+        <tr>
+          <td>386</td>
+          <td><a href="https://store.steampowered.com/app/34010">Alpha Protocol</a></td>
+          <td>5h 44m</td>
+          <td>1h 59m</td>
+          <td>$1.49</td>
+          <td>80.7%</td>
+          <td>1.826</td>
+        </tr>
+        
+        <tr>
+          <td>387</td>
+          <td><a href="https://store.steampowered.com/app/242920">Banished</a></td>
+          <td>21h 29m</td>
+          <td>8h 46m</td>
+          <td>$6.79</td>
+          <td>90.1%</td>
+          <td>1.822</td>
+        </tr>
+        
+        <tr>
+          <td>388</td>
+          <td><a href="https://store.steampowered.com/app/296300">Ballistic Overkill</a></td>
+          <td>31h 48m</td>
+          <td>6h 12m</td>
+          <td>$5.99</td>
+          <td>77.7%</td>
+          <td>1.822</td>
+        </tr>
+        
+        <tr>
+          <td>389</td>
+          <td><a href="https://store.steampowered.com/app/504130">Manual Samuel</a></td>
+          <td>10h 36m</td>
+          <td>3h 48m</td>
+          <td>$2.99</td>
+          <td>85.7%</td>
+          <td>1.818</td>
+        </tr>
+        
+        <tr>
+          <td>390</td>
+          <td><a href="https://store.steampowered.com/app/306660">Ultimate General: Gettysburg</a></td>
+          <td>3h 33m</td>
+          <td>3h 03m</td>
+          <td>$1.49</td>
+          <td>82.3%</td>
+          <td>1.818</td>
+        </tr>
+        
+        <tr>
+          <td>391</td>
+          <td><a href="https://store.steampowered.com/app/97330">Magic: The Gathering - Duels of the Planeswalkers 2013</a></td>
+          <td>27h 00m</td>
+          <td>15h 34m</td>
+          <td>$9.99</td>
+          <td>88.5%</td>
+          <td>1.816</td>
+        </tr>
+        
+        <tr>
+          <td>392</td>
+          <td><a href="https://store.steampowered.com/app/47810">Dragon Age: Origins - Ultimate Edition</a></td>
+          <td>26h 14m</td>
+          <td>8h 06m</td>
+          <td>$7.49</td>
+          <td>93.2%</td>
+          <td>1.814</td>
+        </tr>
+        
+        <tr>
+          <td>393</td>
+          <td><a href="https://store.steampowered.com/app/371180">Super 3-D Noah's Ark</a></td>
+          <td>4h 51m</td>
+          <td>5h 11m</td>
+          <td>$2.49</td>
+          <td>89.8%</td>
+          <td>1.807</td>
+        </tr>
+        
+        <tr>
+          <td>394</td>
+          <td><a href="https://store.steampowered.com/app/22450">Hunted: The Demon’s Forge</a></td>
+          <td>4h 34m</td>
+          <td>2h 15m</td>
+          <td>$1.24</td>
+          <td>69.9%</td>
+          <td>1.806</td>
+        </tr>
+        
+        <tr>
+          <td>395</td>
+          <td><a href="https://store.steampowered.com/app/244210">Assetto Corsa</a></td>
+          <td>42h 49m</td>
+          <td>9h 58m</td>
+          <td>$9.99</td>
+          <td>87.0%</td>
+          <td>1.799</td>
+        </tr>
+        
+        <tr>
+          <td>396</td>
+          <td><a href="https://store.steampowered.com/app/389170">A Lenda do Herói - O Herói desta Canção</a></td>
+          <td>26h 45m</td>
+          <td>37h 01m</td>
+          <td>$15.99</td>
+          <td>91.4%</td>
+          <td>1.799</td>
+        </tr>
+        
+        <tr>
+          <td>397</td>
+          <td><a href="https://store.steampowered.com/app/222640">Aarklash: Legacy</a></td>
+          <td>4h 00m</td>
+          <td>3h 23m</td>
+          <td>$1.59</td>
+          <td>77.7%</td>
+          <td>1.797</td>
+        </tr>
+        
+        <tr>
+          <td>398</td>
+          <td><a href="https://store.steampowered.com/app/239070">Hammerwatch</a></td>
+          <td>5h 59m</td>
+          <td>2h 38m</td>
+          <td>$1.99</td>
+          <td>90.1%</td>
+          <td>1.797</td>
+        </tr>
+        
+        <tr>
+          <td>399</td>
+          <td><a href="https://store.steampowered.com/app/233720">Surgeon Simulator</a></td>
+          <td>4h 08m</td>
+          <td>2h 32m</td>
+          <td>$1.49</td>
+          <td>82.7%</td>
+          <td>1.796</td>
+        </tr>
+        
+        <tr>
+          <td>400</td>
+          <td><a href="https://store.steampowered.com/app/405640">Pony Island</a></td>
+          <td>3h 45m</td>
+          <td>2h 31m</td>
+          <td>$1.64</td>
+          <td>95.8%</td>
+          <td>1.795</td>
+        </tr>
+        
+        <tr>
+          <td>401</td>
+          <td><a href="https://store.steampowered.com/app/282530">Castlevania: Lords of Shadow – Mirror of Fate HD</a></td>
+          <td>6h 28m</td>
+          <td>6h 39m</td>
+          <td>$2.99</td>
+          <td>81.8%</td>
+          <td>1.793</td>
+        </tr>
+        
+        <tr>
+          <td>402</td>
+          <td><a href="https://store.steampowered.com/app/287020">Harvester</a></td>
+          <td>3h 04m</td>
+          <td>2h 49m</td>
+          <td>$1.49</td>
+          <td>90.8%</td>
+          <td>1.791</td>
+        </tr>
+        
+        <tr>
+          <td>403</td>
+          <td><a href="https://store.steampowered.com/app/231430">Company of Heroes 2</a></td>
+          <td>33h 13m</td>
+          <td>4h 20m</td>
+          <td>$4.99</td>
+          <td>74.2%</td>
+          <td>1.785</td>
+        </tr>
+        
+        <tr>
+          <td>404</td>
+          <td><a href="https://store.steampowered.com/app/12900">AudioSurf</a></td>
+          <td>8h 45m</td>
+          <td>2h 27m</td>
+          <td>$2.49</td>
+          <td>95.9%</td>
+          <td>1.783</td>
+        </tr>
+        
+        <tr>
+          <td>405</td>
+          <td><a href="https://store.steampowered.com/app/280220">Creeper World 3: Arc Eternal</a></td>
+          <td>21h 37m</td>
+          <td>12h 41m</td>
+          <td>$8.99</td>
+          <td>96.6%</td>
+          <td>1.780</td>
+        </tr>
+        
+        <tr>
+          <td>406</td>
+          <td><a href="https://store.steampowered.com/app/508190">Dragon Knight</a></td>
+          <td>4h 13m</td>
+          <td>2h 59m</td>
+          <td>$1.59</td>
+          <td>79.7%</td>
+          <td>1.777</td>
+        </tr>
+        
+        <tr>
+          <td>407</td>
+          <td><a href="https://store.steampowered.com/app/237890">Agarest: Generations of War</a></td>
+          <td>25h 41m</td>
+          <td>3h 11m</td>
+          <td>$3.74</td>
+          <td>73.4%</td>
+          <td>1.774</td>
+        </tr>
+        
+        <tr>
+          <td>408</td>
+          <td><a href="https://store.steampowered.com/app/346940">Shadowrun: Hong Kong - Extended Edition</a></td>
+          <td>14h 22m</td>
+          <td>7h 22m</td>
+          <td>$4.99</td>
+          <td>85.9%</td>
+          <td>1.770</td>
+        </tr>
+        
+        <tr>
+          <td>409</td>
+          <td><a href="https://store.steampowered.com/app/47890">The Sims 3</a></td>
+          <td>35h 40m</td>
+          <td>12h 35m</td>
+          <td>$9.99</td>
+          <td>83.5%</td>
+          <td>1.770</td>
+        </tr>
+        
+        <tr>
+          <td>410</td>
+          <td><a href="https://store.steampowered.com/app/337000">Deus Ex: Mankind Divided</a></td>
+          <td>20h 04m</td>
+          <td>6h 55m</td>
+          <td>$4.49</td>
+          <td>67.4%</td>
+          <td>1.769</td>
+        </tr>
+        
+        <tr>
+          <td>411</td>
+          <td><a href="https://store.steampowered.com/app/2600">Vampire: The Masquerade - Bloodlines</a></td>
+          <td>15h 34m</td>
+          <td>5h 33m</td>
+          <td>$4.99</td>
+          <td>94.7%</td>
+          <td>1.765</td>
+        </tr>
+        
+        <tr>
+          <td>412</td>
+          <td><a href="https://store.steampowered.com/app/313690">LEGO Batman3: Beyond Gotham</a></td>
+          <td>13h 54m</td>
+          <td>7h 28m</td>
+          <td>$4.99</td>
+          <td>86.4%</td>
+          <td>1.763</td>
+        </tr>
+        
+        <tr>
+          <td>413</td>
+          <td><a href="https://store.steampowered.com/app/368230">Kingdom: Classic</a></td>
+          <td>4h 51m</td>
+          <td>5h 02m</td>
+          <td>$2.49</td>
+          <td>88.4%</td>
+          <td>1.754</td>
+        </tr>
+        
+        <tr>
+          <td>414</td>
+          <td><a href="https://store.steampowered.com/app/7200">Trackmania United Forever Star Edition</a></td>
+          <td>31h 50m</td>
+          <td>8h 37m</td>
+          <td>$8.99</td>
+          <td>95.2%</td>
+          <td>1.754</td>
+        </tr>
+        
+        <tr>
+          <td>415</td>
+          <td><a href="https://store.steampowered.com/app/407310">NEKO-NIN exHeart</a></td>
+          <td>37h 52m</td>
+          <td>4h 12m</td>
+          <td>$6.99</td>
+          <td>97.1%</td>
+          <td>1.751</td>
+        </tr>
+        
+        <tr>
+          <td>416</td>
+          <td><a href="https://store.steampowered.com/app/369990">Gremlins, Inc.</a></td>
+          <td>29h 57m</td>
+          <td>7h 36m</td>
+          <td>$7.49</td>
+          <td>86.9%</td>
+          <td>1.751</td>
+        </tr>
+        
+        <tr>
+          <td>417</td>
+          <td><a href="https://store.steampowered.com/app/219640">Chivalry: Medieval Warfare</a></td>
+          <td>15h 05m</td>
+          <td>4h 09m</td>
+          <td>$3.74</td>
+          <td>82.8%</td>
+          <td>1.751</td>
+        </tr>
+        
+        <tr>
+          <td>418</td>
+          <td><a href="https://store.steampowered.com/app/266170">Windforge</a></td>
+          <td>14h 23m</td>
+          <td>11h 27m</td>
+          <td>$4.99</td>
+          <td>68.0%</td>
+          <td>1.750</td>
+        </tr>
+        
+        <tr>
+          <td>419</td>
+          <td><a href="https://store.steampowered.com/app/252630">Eldritch</a></td>
+          <td>3h 52m</td>
+          <td>2h 14m</td>
+          <td>$1.49</td>
+          <td>88.6%</td>
+          <td>1.748</td>
+        </tr>
+        
+        <tr>
+          <td>420</td>
+          <td><a href="https://store.steampowered.com/app/223830">Xenonauts</a></td>
+          <td>18h 39m</td>
+          <td>8h 05m</td>
+          <td>$6.24</td>
+          <td>88.7%</td>
+          <td>1.746</td>
+        </tr>
+        
+        <tr>
+          <td>421</td>
+          <td><a href="https://store.steampowered.com/app/568570">Force of Nature</a></td>
+          <td>8h 17m</td>
+          <td>5h 52m</td>
+          <td>$2.95</td>
+          <td>73.9%</td>
+          <td>1.746</td>
+        </tr>
+        
+        <tr>
+          <td>422</td>
+          <td><a href="https://store.steampowered.com/app/474750">Reigns</a></td>
+          <td>3h 30m</td>
+          <td>2h 23m</td>
+          <td>$1.49</td>
+          <td>90.0%</td>
+          <td>1.744</td>
+        </tr>
+        
+        <tr>
+          <td>423</td>
+          <td><a href="https://store.steampowered.com/app/530390">Slayaway Camp</a></td>
+          <td>4h 24m</td>
+          <td>3h 42m</td>
+          <td>$2.24</td>
+          <td>96.8%</td>
+          <td>1.743</td>
+        </tr>
+        
+        <tr>
+          <td>424</td>
+          <td><a href="https://store.steampowered.com/app/203140">Hitman: Absolution</a></td>
+          <td>13h 17m</td>
+          <td>6h 55m</td>
+          <td>$4.99</td>
+          <td>90.7%</td>
+          <td>1.742</td>
+        </tr>
+        
+        <tr>
+          <td>425</td>
+          <td><a href="https://store.steampowered.com/app/373770">LiEat</a></td>
+          <td>3h 30m</td>
+          <td>2h 58m</td>
+          <td>$1.79</td>
+          <td>96.7%</td>
+          <td>1.742</td>
+        </tr>
+        
+        <tr>
+          <td>426</td>
+          <td><a href="https://store.steampowered.com/app/383230">Dungeon Souls</a></td>
+          <td>6h 45m</td>
+          <td>5h 07m</td>
+          <td>$2.59</td>
+          <td>76.7%</td>
+          <td>1.741</td>
+        </tr>
+        
+        <tr>
+          <td>427</td>
+          <td><a href="https://store.steampowered.com/app/467960">Home Behind</a></td>
+          <td>10h 34m</td>
+          <td>6h 31m</td>
+          <td>$4.19</td>
+          <td>87.9%</td>
+          <td>1.741</td>
+        </tr>
+        
+        <tr>
+          <td>428</td>
+          <td><a href="https://store.steampowered.com/app/206370">Tales From Space: Mutant Blobs Attack</a></td>
+          <td>3h 26m</td>
+          <td>2h 43m</td>
+          <td>$1.59</td>
+          <td>90.5%</td>
+          <td>1.738</td>
+        </tr>
+        
+        <tr>
+          <td>429</td>
+          <td><a href="https://store.steampowered.com/app/17710">Nuclear Dawn</a></td>
+          <td>5h 13m</td>
+          <td>2h 56m</td>
+          <td>$1.79</td>
+          <td>79.5%</td>
+          <td>1.737</td>
+        </tr>
+        
+        <tr>
+          <td>430</td>
+          <td><a href="https://store.steampowered.com/app/341940">Hatred</a></td>
+          <td>5h 32m</td>
+          <td>3h 55m</td>
+          <td>$2.9</td>
+          <td>77.9%</td>
+          <td>1.736</td>
+        </tr>
+        
+        <tr>
+          <td>431</td>
+          <td><a href="https://store.steampowered.com/app/214950">Total War: ROME II - Emperor Edition</a></td>
+          <td>84h 26m</td>
+          <td>23h 45m</td>
+          <td>$20.38</td>
+          <td>78.9%</td>
+          <td>1.733</td>
+        </tr>
+        
+        <tr>
+          <td>432</td>
+          <td><a href="https://store.steampowered.com/app/236690">Blood Bowl 2</a></td>
+          <td>28h 36m</td>
+          <td>9h 26m</td>
+          <td>$6.79</td>
+          <td>71.5%</td>
+          <td>1.731</td>
+        </tr>
+        
+        <tr>
+          <td>433</td>
+          <td><a href="https://store.steampowered.com/app/252450">StarDrive 2</a></td>
+          <td>18h 45m</td>
+          <td>17h 30m</td>
+          <td>$5.99</td>
+          <td>57.2%</td>
+          <td>1.730</td>
+        </tr>
+        
+        <tr>
+          <td>434</td>
+          <td><a href="https://store.steampowered.com/app/250340">Blockland</a></td>
+          <td>40h 56m</td>
+          <td>2h 14m</td>
+          <td>$3.99</td>
+          <td>72.2%</td>
+          <td>1.730</td>
+        </tr>
+        
+        <tr>
+          <td>435</td>
+          <td><a href="https://store.steampowered.com/app/427520">Factorio</a></td>
+          <td>82h 11m</td>
+          <td>33h 33m</td>
+          <td>$30.0</td>
+          <td>98.5%</td>
+          <td>1.725</td>
+        </tr>
+        
+        <tr>
+          <td>436</td>
+          <td><a href="https://store.steampowered.com/app/40970">Stronghold Crusader HD</a></td>
+          <td>8h 29m</td>
+          <td>2h 21m</td>
+          <td>$2.49</td>
+          <td>96.1%</td>
+          <td>1.723</td>
+        </tr>
+        
+        <tr>
+          <td>437</td>
+          <td><a href="https://store.steampowered.com/app/12810">Overlord II</a></td>
+          <td>7h 09m</td>
+          <td>3h 21m</td>
+          <td>$2.49</td>
+          <td>87.6%</td>
+          <td>1.721</td>
+        </tr>
+        
+        <tr>
+          <td>438</td>
+          <td><a href="https://store.steampowered.com/app/263760">Turbo Dismount</a></td>
+          <td>7h 30m</td>
+          <td>4h 10m</td>
+          <td>$2.99</td>
+          <td>91.7%</td>
+          <td>1.714</td>
+        </tr>
+        
+        <tr>
+          <td>439</td>
+          <td><a href="https://store.steampowered.com/app/496620">Monster Slayers</a></td>
+          <td>5h 09m</td>
+          <td>4h 00m</td>
+          <td>$2.24</td>
+          <td>84.5%</td>
+          <td>1.712</td>
+        </tr>
+        
+        <tr>
+          <td>440</td>
+          <td><a href="https://store.steampowered.com/app/327410">A Bird Story</a></td>
+          <td>3h 09m</td>
+          <td>2h 25m</td>
+          <td>$1.35</td>
+          <td>83.6%</td>
+          <td>1.708</td>
+        </tr>
+        
+        <tr>
+          <td>441</td>
+          <td><a href="https://store.steampowered.com/app/203830">The Dark Eye: Chains of Satinav</a></td>
+          <td>4h 45m</td>
+          <td>3h 15m</td>
+          <td>$1.99</td>
+          <td>86.5%</td>
+          <td>1.708</td>
+        </tr>
+        
+        <tr>
+          <td>442</td>
+          <td><a href="https://store.steampowered.com/app/445220">Avorion</a></td>
+          <td>40h 06m</td>
+          <td>14h 26m</td>
+          <td>$12.59</td>
+          <td>89.3%</td>
+          <td>1.707</td>
+        </tr>
+        
+        <tr>
+          <td>443</td>
+          <td><a href="https://store.steampowered.com/app/639790">DEEP SPACE WAIFU</a></td>
+          <td>2h 46m</td>
+          <td>2h 09m</td>
+          <td>$1.39</td>
+          <td>97.1%</td>
+          <td>1.705</td>
+        </tr>
+        
+        <tr>
+          <td>444</td>
+          <td><a href="https://store.steampowered.com/app/316790">Grim Fandango Remastered</a></td>
+          <td>5h 55m</td>
+          <td>5h 27m</td>
+          <td>$2.99</td>
+          <td>89.7%</td>
+          <td>1.704</td>
+        </tr>
+        
+        <tr>
+          <td>445</td>
+          <td><a href="https://store.steampowered.com/app/312840">Fahrenheit: Indigo Prophecy Remastered</a></td>
+          <td>4h 44m</td>
+          <td>3h 36m</td>
+          <td>$1.99</td>
+          <td>82.0%</td>
+          <td>1.701</td>
+        </tr>
+        
+        <tr>
+          <td>446</td>
+          <td><a href="https://store.steampowered.com/app/201870">Assassin's Creed Revelations</a></td>
+          <td>18h 57m</td>
+          <td>13h 08m</td>
+          <td>$7.99</td>
+          <td>85.9%</td>
+          <td>1.695</td>
+        </tr>
+        
+        <tr>
+          <td>447</td>
+          <td><a href="https://store.steampowered.com/app/377900">Empire TV Tycoon</a></td>
+          <td>10h 48m</td>
+          <td>11h 38m</td>
+          <td>$4.99</td>
+          <td>75.4%</td>
+          <td>1.695</td>
+        </tr>
+        
+        <tr>
+          <td>448</td>
+          <td><a href="https://store.steampowered.com/app/10150">Prototype</a></td>
+          <td>15h 33m</td>
+          <td>6h 57m</td>
+          <td>$4.99</td>
+          <td>81.3%</td>
+          <td>1.695</td>
+        </tr>
+        
+        <tr>
+          <td>449</td>
+          <td><a href="https://store.steampowered.com/app/31270">Puzzle Agent</a></td>
+          <td>2h 50m</td>
+          <td>2h 00m</td>
+          <td>$1.24</td>
+          <td>88.3%</td>
+          <td>1.694</td>
+        </tr>
+        
+        <tr>
+          <td>450</td>
+          <td><a href="https://store.steampowered.com/app/239350">Spelunky</a></td>
+          <td>12h 11m</td>
+          <td>2h 32m</td>
+          <td>$2.99</td>
+          <td>91.2%</td>
+          <td>1.694</td>
+        </tr>
+        
+        <tr>
+          <td>451</td>
+          <td><a href="https://store.steampowered.com/app/351990">Riff Racer - Race Your Music!</a></td>
+          <td>5h 59m</td>
+          <td>5h 54m</td>
+          <td>$2.99</td>
+          <td>84.9%</td>
+          <td>1.688</td>
+        </tr>
+        
+        <tr>
+          <td>452</td>
+          <td><a href="https://store.steampowered.com/app/394760">Dead Effect 2</a></td>
+          <td>7h 02m</td>
+          <td>4h 19m</td>
+          <td>$2.39</td>
+          <td>73.2%</td>
+          <td>1.687</td>
+        </tr>
+        
+        <tr>
+          <td>453</td>
+          <td><a href="https://store.steampowered.com/app/239140">Dying Light</a></td>
+          <td>36h 02m</td>
+          <td>23h 28m</td>
+          <td>$15.99</td>
+          <td>92.7%</td>
+          <td>1.686</td>
+        </tr>
+        
+        <tr>
+          <td>454</td>
+          <td><a href="https://store.steampowered.com/app/321270">UNLOVED</a></td>
+          <td>4h 25m</td>
+          <td>4h 12m</td>
+          <td>$1.99</td>
+          <td>77.8%</td>
+          <td>1.684</td>
+        </tr>
+        
+        <tr>
+          <td>455</td>
+          <td><a href="https://store.steampowered.com/app/237110">Mortal Kombat Komplete Edition</a></td>
+          <td>15h 20m</td>
+          <td>5h 39m</td>
+          <td>$4.99</td>
+          <td>89.7%</td>
+          <td>1.673</td>
+        </tr>
+        
+        <tr>
+          <td>456</td>
+          <td><a href="https://store.steampowered.com/app/15740">Oddworld: Munch's Oddysee</a></td>
+          <td>3h 33m</td>
+          <td>2h 17m</td>
+          <td>$1.24</td>
+          <td>72.8%</td>
+          <td>1.671</td>
+        </tr>
+        
+        <tr>
+          <td>457</td>
+          <td><a href="https://store.steampowered.com/app/321800">Icewind Dale: Enhanced Edition</a></td>
+          <td>10h 31m</td>
+          <td>5h 52m</td>
+          <td>$3.99</td>
+          <td>84.8%</td>
+          <td>1.670</td>
+        </tr>
+        
+        <tr>
+          <td>458</td>
+          <td><a href="https://store.steampowered.com/app/91700">E.Y.E: Divine Cybermancy</a></td>
+          <td>8h 39m</td>
+          <td>4h 07m</td>
+          <td>$2.99</td>
+          <td>83.4%</td>
+          <td>1.664</td>
+        </tr>
+        
+        <tr>
+          <td>459</td>
+          <td><a href="https://store.steampowered.com/app/271820">Card City Nights</a></td>
+          <td>4h 54m</td>
+          <td>2h 44m</td>
+          <td>$1.99</td>
+          <td>90.4%</td>
+          <td>1.662</td>
+        </tr>
+        
+        <tr>
+          <td>460</td>
+          <td><a href="https://store.steampowered.com/app/288060">Whispering Willows</a></td>
+          <td>4h 07m</td>
+          <td>3h 51m</td>
+          <td>$1.99</td>
+          <td>83.0%</td>
+          <td>1.661</td>
+        </tr>
+        
+        <tr>
+          <td>461</td>
+          <td><a href="https://store.steampowered.com/app/35140">Batman: Arkham Asylum Game of the Year Edition</a></td>
+          <td>10h 54m</td>
+          <td>6h 47m</td>
+          <td>$4.99</td>
+          <td>96.3%</td>
+          <td>1.660</td>
+        </tr>
+        
+        <tr>
+          <td>462</td>
+          <td><a href="https://store.steampowered.com/app/219780">Divinity II: Developer's Cut</a></td>
+          <td>8h 43m</td>
+          <td>1h 49m</td>
+          <td>$1.99</td>
+          <td>82.8%</td>
+          <td>1.656</td>
+        </tr>
+        
+        <tr>
+          <td>463</td>
+          <td><a href="https://store.steampowered.com/app/388750">BlazBlue: Chronophantasma Extend</a></td>
+          <td>15h 26m</td>
+          <td>4h 13m</td>
+          <td>$4.49</td>
+          <td>92.1%</td>
+          <td>1.654</td>
+        </tr>
+        
+        <tr>
+          <td>464</td>
+          <td><a href="https://store.steampowered.com/app/4760">Rome: Total War - Collection</a></td>
+          <td>22h 00m</td>
+          <td>3h 29m</td>
+          <td>$4.99</td>
+          <td>94.2%</td>
+          <td>1.653</td>
+        </tr>
+        
+        <tr>
+          <td>465</td>
+          <td><a href="https://store.steampowered.com/app/421030">Catch Me</a></td>
+          <td>3h 28m</td>
+          <td>3h 56m</td>
+          <td>$1.79</td>
+          <td>79.6%</td>
+          <td>1.643</td>
+        </tr>
+        
+        <tr>
+          <td>466</td>
+          <td><a href="https://store.steampowered.com/app/253110">The Cat Lady</a></td>
+          <td>5h 24m</td>
+          <td>2h 59m</td>
+          <td>$2.29</td>
+          <td>93.5%</td>
+          <td>1.638</td>
+        </tr>
+        
+        <tr>
+          <td>467</td>
+          <td><a href="https://store.steampowered.com/app/260730">Desperados: Wanted Dead or Alive</a></td>
+          <td>13h 47m</td>
+          <td>11h 46m</td>
+          <td>$4.99</td>
+          <td>64.1%</td>
+          <td>1.635</td>
+        </tr>
+        
+        <tr>
+          <td>468</td>
+          <td><a href="https://store.steampowered.com/app/255390">Max: The Curse of Brotherhood</a></td>
+          <td>6h 43m</td>
+          <td>6h 13m</td>
+          <td>$3.74</td>
+          <td>94.6%</td>
+          <td>1.634</td>
+        </tr>
+        
+        <tr>
+          <td>469</td>
+          <td><a href="https://store.steampowered.com/app/296070">MIND: Path to Thalamus Enhanced Edition</a></td>
+          <td>4h 13m</td>
+          <td>4h 19m</td>
+          <td>$1.79</td>
+          <td>68.5%</td>
+          <td>1.632</td>
+        </tr>
+        
+        <tr>
+          <td>470</td>
+          <td><a href="https://store.steampowered.com/app/219830">King Arthur's Gold</a></td>
+          <td>11h 58m</td>
+          <td>1h 59m</td>
+          <td>$2.49</td>
+          <td>83.3%</td>
+          <td>1.630</td>
+        </tr>
+        
+        <tr>
+          <td>471</td>
+          <td><a href="https://store.steampowered.com/app/213670">South Park: The Stick of Truth</a></td>
+          <td>13h 14m</td>
+          <td>11h 48m</td>
+          <td>$7.49</td>
+          <td>97.6%</td>
+          <td>1.628</td>
+        </tr>
+        
+        <tr>
+          <td>472</td>
+          <td><a href="https://store.steampowered.com/app/215470">Primal Carnage</a></td>
+          <td>7h 50m</td>
+          <td>2h 12m</td>
+          <td>$1.99</td>
+          <td>77.8%</td>
+          <td>1.623</td>
+        </tr>
+        
+        <tr>
+          <td>473</td>
+          <td><a href="https://store.steampowered.com/app/2990">FlatOut 2</a></td>
+          <td>6h 31m</td>
+          <td>1h 49m</td>
+          <td>$1.99</td>
+          <td>93.7%</td>
+          <td>1.620</td>
+        </tr>
+        
+        <tr>
+          <td>474</td>
+          <td><a href="https://store.steampowered.com/app/265590">The Red Solstice</a></td>
+          <td>5h 56m</td>
+          <td>5h 03m</td>
+          <td>$2.49</td>
+          <td>73.7%</td>
+          <td>1.620</td>
+        </tr>
+        
+        <tr>
+          <td>475</td>
+          <td><a href="https://store.steampowered.com/app/480650">Yu-Gi-Oh! Legacy of the Duelist</a></td>
+          <td>26h 28m</td>
+          <td>13h 31m</td>
+          <td>$9.99</td>
+          <td>85.2%</td>
+          <td>1.612</td>
+        </tr>
+        
+        <tr>
+          <td>476</td>
+          <td><a href="https://store.steampowered.com/app/24790">Command & Conquer 3: Tiberium Wars</a></td>
+          <td>10h 33m</td>
+          <td>4h 21m</td>
+          <td>$3.74</td>
+          <td>88.9%</td>
+          <td>1.610</td>
+        </tr>
+        
+        <tr>
+          <td>477</td>
+          <td><a href="https://store.steampowered.com/app/473460">Memory Oblivion Box</a></td>
+          <td>13h 47m</td>
+          <td>14h 08m</td>
+          <td>$7.99</td>
+          <td>92.1%</td>
+          <td>1.609</td>
+        </tr>
+        
+        <tr>
+          <td>478</td>
+          <td><a href="https://store.steampowered.com/app/311690">Enter the Gungeon</a></td>
+          <td>20h 47m</td>
+          <td>8h 04m</td>
+          <td>$7.49</td>
+          <td>93.0%</td>
+          <td>1.608</td>
+        </tr>
+        
+        <tr>
+          <td>479</td>
+          <td><a href="https://store.steampowered.com/app/3920">Sid Meier's Pirates!</a></td>
+          <td>8h 27m</td>
+          <td>2h 10m</td>
+          <td>$2.49</td>
+          <td>93.5%</td>
+          <td>1.607</td>
+        </tr>
+        
+        <tr>
+          <td>480</td>
+          <td><a href="https://store.steampowered.com/app/214560">Mark of the Ninja</a></td>
+          <td>7h 37m</td>
+          <td>4h 59m</td>
+          <td>$3.74</td>
+          <td>97.3%</td>
+          <td>1.603</td>
+        </tr>
+        
+        <tr>
+          <td>481</td>
+          <td><a href="https://store.steampowered.com/app/388320">1979 Revolution: Black Friday</a></td>
+          <td>3h 16m</td>
+          <td>2h 59m</td>
+          <td>$1.49</td>
+          <td>76.4%</td>
+          <td>1.600</td>
+        </tr>
+        
+        <tr>
+          <td>482</td>
+          <td><a href="https://store.steampowered.com/app/251890">World of Diving</a></td>
+          <td>5h 12m</td>
+          <td>5h 25m</td>
+          <td>$1.99</td>
+          <td>60.0%</td>
+          <td>1.599</td>
+        </tr>
+        
+        <tr>
+          <td>483</td>
+          <td><a href="https://store.steampowered.com/app/35720">Trine 2: Complete Story</a></td>
+          <td>7h 03m</td>
+          <td>3h 30m</td>
+          <td>$2.99</td>
+          <td>96.0%</td>
+          <td>1.595</td>
+        </tr>
+        
+        <tr>
+          <td>484</td>
+          <td><a href="https://store.steampowered.com/app/282760">Circuits</a></td>
+          <td>2h 39m</td>
+          <td>1h 49m</td>
+          <td>$1.24</td>
+          <td>90.1%</td>
+          <td>1.594</td>
+        </tr>
+        
+        <tr>
+          <td>485</td>
+          <td><a href="https://store.steampowered.com/app/40300">Risen</a></td>
+          <td>10h 47m</td>
+          <td>3h 33m</td>
+          <td>$3.39</td>
+          <td>87.1%</td>
+          <td>1.590</td>
+        </tr>
+        
+        <tr>
+          <td>486</td>
+          <td><a href="https://store.steampowered.com/app/12710">Overlord: Raising Hell</a></td>
+          <td>7h 45m</td>
+          <td>2h 20m</td>
+          <td>$2.49</td>
+          <td>93.0%</td>
+          <td>1.589</td>
+        </tr>
+        
+        <tr>
+          <td>487</td>
+          <td><a href="https://store.steampowered.com/app/577800">NBA 2K18</a></td>
+          <td>82h 21m</td>
+          <td>36h 16m</td>
+          <td>$9.59</td>
+          <td>27.8%</td>
+          <td>1.587</td>
+        </tr>
+        
+        <tr>
+          <td>488</td>
+          <td><a href="https://store.steampowered.com/app/431240">Golf With Your Friends</a></td>
+          <td>8h 58m</td>
+          <td>5h 09m</td>
+          <td>$3.89</td>
+          <td>90.7%</td>
+          <td>1.584</td>
+        </tr>
+        
+        <tr>
+          <td>489</td>
+          <td><a href="https://store.steampowered.com/app/316430">Battle of Empires : 1914-1918</a></td>
+          <td>20h 12m</td>
+          <td>5h 44m</td>
+          <td>$4.49</td>
+          <td>66.1%</td>
+          <td>1.583</td>
+        </tr>
+        
+        <tr>
+          <td>490</td>
+          <td><a href="https://store.steampowered.com/app/298110">Far Cry 4</a></td>
+          <td>27h 14m</td>
+          <td>21h 40m</td>
+          <td>$11.99</td>
+          <td>78.1%</td>
+          <td>1.583</td>
+        </tr>
+        
+        <tr>
+          <td>491</td>
+          <td><a href="https://store.steampowered.com/app/333250">Forward to the Sky</a></td>
+          <td>3h 31m</td>
+          <td>3h 57m</td>
+          <td>$1.99</td>
+          <td>84.5%</td>
+          <td>1.582</td>
+        </tr>
+        
+        <tr>
+          <td>492</td>
+          <td><a href="https://store.steampowered.com/app/39150">FINAL FANTASY VIII</a></td>
+          <td>20h 52m</td>
+          <td>5h 21m</td>
+          <td>$5.99</td>
+          <td>89.6%</td>
+          <td>1.581</td>
+        </tr>
+        
+        <tr>
+          <td>493</td>
+          <td><a href="https://store.steampowered.com/app/524580">Fairy Fencer F Advent Dark Force | フェアリーフェンサー エフ ADVENT DARK FORCE | 妖精劍士 F ADVENT DARK FORCE</a></td>
+          <td>16h 45m</td>
+          <td>7h 26m</td>
+          <td>$5.99</td>
+          <td>84.7%</td>
+          <td>1.579</td>
+        </tr>
+        
+        <tr>
+          <td>494</td>
+          <td><a href="https://store.steampowered.com/app/269290">liteCam Game: 100 FPS Game Capture</a></td>
+          <td>34h 29m</td>
+          <td>60h 27m</td>
+          <td>$14.99</td>
+          <td>51.7%</td>
+          <td>1.576</td>
+        </tr>
+        
+        <tr>
+          <td>495</td>
+          <td><a href="https://store.steampowered.com/app/367500">Dragon's Dogma: Dark Arisen</a></td>
+          <td>31h 21m</td>
+          <td>9h 46m</td>
+          <td>$9.89</td>
+          <td>89.0%</td>
+          <td>1.575</td>
+        </tr>
+        
+        <tr>
+          <td>496</td>
+          <td><a href="https://store.steampowered.com/app/352400">LEGO Jurassic World</a></td>
+          <td>11h 36m</td>
+          <td>7h 18m</td>
+          <td>$4.99</td>
+          <td>85.2%</td>
+          <td>1.571</td>
+        </tr>
+        
+        <tr>
+          <td>497</td>
+          <td><a href="https://store.steampowered.com/app/673950">Farm Together</a></td>
+          <td>33h 42m</td>
+          <td>20h 16m</td>
+          <td>$14.99</td>
+          <td>90.1%</td>
+          <td>1.570</td>
+        </tr>
+        
+        <tr>
+          <td>498</td>
+          <td><a href="https://store.steampowered.com/app/351490">Intergalactic Bubbles</a></td>
+          <td>4h 09m</td>
+          <td>3h 28m</td>
+          <td>$1.99</td>
+          <td>82.4%</td>
+          <td>1.570</td>
+        </tr>
+        
+        <tr>
+          <td>499</td>
+          <td><a href="https://store.steampowered.com/app/228180">Action! - Gameplay Recording and Streaming</a></td>
+          <td>65h 13m</td>
+          <td>53h 13m</td>
+          <td>$29.99</td>
+          <td>79.9%</td>
+          <td>1.569</td>
+        </tr>
+        
+        <tr>
+          <td>500</td>
+          <td><a href="https://store.steampowered.com/app/219910">Edna & Harvey: Harvey's New Eyes</a></td>
+          <td>3h 53m</td>
+          <td>2h 58m</td>
+          <td>$1.99</td>
+          <td>91.7%</td>
+          <td>1.564</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

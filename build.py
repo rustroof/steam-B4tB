@@ -17,3 +17,9 @@ with open('template.html') as ifs:
 template = Template(template_str)
 with open('index.html', 'wb') as ofs:
     ofs.write(template.render(df=pdf).encode('utf-8'))
+
+pdfc = df[
+    (df.positive + df.negative >= 500) 
+    & (df.price >= 100)].sort_values('score', ascending=False)
+with open('no-cheap/index.html', 'wb') as ofs:
+    ofs.write(template.render(df=pdfc).encode('utf-8'))
